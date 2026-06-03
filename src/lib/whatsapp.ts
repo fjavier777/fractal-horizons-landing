@@ -18,6 +18,8 @@ const messages: Record<string, string> = {
     "Olá! Gostaria de uma Consultoria Tecnológica estratégica para acelerar os resultados do meu negócio. Quero saber mais.",
 };
 
+export const servicesList = Object.keys(messages).filter((k) => k !== "default");
+
 export function getWhatsAppUrl(service?: string): string {
   const msg = messages[service ?? ""] ?? messages.default;
   const encoded = encodeURIComponent(msg);
