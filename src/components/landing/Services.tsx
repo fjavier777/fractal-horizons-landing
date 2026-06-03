@@ -5,7 +5,10 @@ import {
   Smartphone,
   Brain,
   Compass,
+  MessageCircle,
+  ArrowRight,
 } from "lucide-react";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const services = [
   {
@@ -70,6 +73,24 @@ export function Services() {
                 </div>
                 <h3 className="mt-5 font-display text-lg font-semibold">{s.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.desc}</p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  <a
+                    href={getWhatsAppUrl(s.title)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-sunset px-3.5 py-2 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+                  >
+                    <MessageCircle className="h-3.5 w-3.5" />
+                    WhatsApp
+                  </a>
+                  <a
+                    href="#contato"
+                    className="inline-flex items-center gap-1.5 rounded-full glass px-3.5 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-white/5"
+                  >
+                    Orçamento
+                    <ArrowRight className="h-3 w-3" />
+                  </a>
+                </div>
               </div>
             </article>
           ))}

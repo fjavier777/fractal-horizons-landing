@@ -1,4 +1,5 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export function CtaFinal() {
   return (
@@ -24,7 +25,7 @@ export function CtaFinal() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="https://wa.me/5500000000000"
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
