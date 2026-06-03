@@ -61,25 +61,88 @@ export function Hero() {
         </p>
 
         <div
-          className="mt-9 flex flex-wrap items-center justify-center gap-3 animate-fade-up"
+          className="mt-9 flex flex-col items-center justify-center gap-3 animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          <a
-            href="#contato"
-            className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
-          >
-            Solicitar Orçamento
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-          </a>
-          <a
-            href={getWhatsAppUrl()}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
-          >
-            <MessageCircle className="h-4 w-4" />
-            Falar no WhatsApp
-          </a>
+          {/* Dropdown de serviço */}
+          <div className="relative w-full max-w-xs">
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              className="flex w-full items-center justify-between rounded-full glass px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-white/5"
+              aria-haspopup="listbox"
+              aria-expanded={open}
+            >
+              <span className="truncate">{displayLabel}</span>
+              <ChevronDown
+                className={`h-4 w-4 shrink-0 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`}
+              />
+            </button>
+            {open && (
+              <ul
+                className="absolute z-20 mt-2 w-full overflow-hidden rounded-2xl border border-border/60 bg-card/95 p-1.5 shadow-xl backdrop-blur-md"
+                role="listbox"
+              >
+                <li>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedService("default");
+                      setOpen(false);
+                    }}
+                    className={`w-full rounded-xl px-4 py-2 text-left text-sm transition-colors ${
+                      selectedService === "default"
+                        ? "bg-white/10 text-foreground"
+                        : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                    }`}
+                    role="option"
+                    aria-selected={selectedService === "default"}
+                  >
+                    Geral
+                  </button>
+                </li>
+                {servicesList.map((svc) => (
+                  <li key={svc}>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSelectedService(svc);
+                        setOpen(false);
+                      }}
+                      className={`w-full rounded-xl px-4 py-2 text-left text-sm transition-colors ${
+                        selectedService === svc
+                          ? "bg-white/10 text-foreground"
+                          : "text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                      }`}
+                      role="option"
+                      aria-selected={selectedService === svc}
+                    >
+                      {svc}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="#contato"
+              className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
+            >
+              Solicitar Orçamento
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </a>
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
+            >
+              <MessageCircle className="h-4 w-4" />
+              Falar no WhatsApp
+            </a>
+          </div>
         </div>
 
         <div
