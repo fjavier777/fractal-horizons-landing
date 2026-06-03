@@ -1,5 +1,6 @@
 import { Github, Instagram, Linkedin } from "lucide-react";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
