@@ -1,4 +1,5 @@
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export function CtaFinal() {
   return (
