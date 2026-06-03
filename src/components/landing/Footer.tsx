@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <div className="flex items-center gap-2.5">
-              <img src={logoAsset.url} alt="" className="h-[4.5rem] w-[4.5rem] rounded-md" />
+              <img src={logoAsset.url} alt="" className="h-10 w-10 rounded-md md:h-14 md:w-14 lg:h-[4.5rem] lg:w-[4.5rem]" />
               <span className="font-display text-base font-semibold">
                 Horizonte <span className="text-gradient">Fractal</span>
               </span>
