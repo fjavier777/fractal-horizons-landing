@@ -1,6 +1,7 @@
 import { ArrowRight, MessageCircle, Sparkles, Zap, ShieldCheck } from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const badges = [
   { icon: Zap, label: "Atendimento rápido" },
