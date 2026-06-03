@@ -40,7 +40,7 @@ export function Footer() {
               { label: "Serviços", href: "#servicos" },
               { label: "Portfólio", href: "#resultados" },
               { label: "Contato", href: "#contato" },
-              { label: "WhatsApp", href: "https://wa.me/5500000000000" },
+              { label: "WhatsApp", href: getWhatsAppUrl() },
             ].map((l) => (
               <a
                 key={l.label}
