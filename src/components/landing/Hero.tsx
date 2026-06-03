@@ -1,7 +1,15 @@
-import { ArrowRight, MessageCircle, Sparkles, Zap, ShieldCheck } from "lucide-react";
+import { useState } from "react";
+import {
+  ArrowRight,
+  MessageCircle,
+  Sparkles,
+  Zap,
+  ShieldCheck,
+  ChevronDown,
+} from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
-import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { getWhatsAppUrl, servicesList } from "@/lib/whatsapp";
 
 const badges = [
   { icon: Zap, label: "Atendimento rápido" },
@@ -10,6 +18,17 @@ const badges = [
 ];
 
 export function Hero() {
+  const [selectedService, setSelectedService] = useState<string>("default");
+  const [open, setOpen] = useState(false);
+
+  const displayLabel =
+    selectedService === "default"
+      ? "Escolha um serviço"
+      : selectedService;
+
+  const whatsappUrl = getWhatsAppUrl(
+    selectedService === "default" ? undefined : selectedService
+  );
   return (
     <section id="top" className="relative overflow-hidden pt-36 pb-24 md:pt-44 md:pb-32">
       <div
