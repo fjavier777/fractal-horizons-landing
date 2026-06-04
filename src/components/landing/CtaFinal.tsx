@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Mail } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 export function CtaFinal() {
@@ -25,6 +25,13 @@ export function CtaFinal() {
             >
               <MessageCircle className="h-4 w-4" />
               Solicitar orçamento no WhatsApp
+            </a>
+            <a
+              href="mailto:horizontefractal@gmail.com"
+              className="group inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-foreground transition-transform hover:-translate-y-0.5"
+            >
+              <Mail className="h-4 w-4" />
+              Enviar e-mail
             </a>
           </div>
         </div>

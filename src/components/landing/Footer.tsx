@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
@@ -22,6 +22,7 @@ export function Footer() {
                 { Icon: Linkedin, href: "#", label: "LinkedIn" },
                 { Icon: Instagram, href: "#", label: "Instagram" },
                 { Icon: Github, href: "#", label: "GitHub" },
+                { Icon: Mail, href: "mailto:horizontefractal@gmail.com", label: "E-mail" },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
