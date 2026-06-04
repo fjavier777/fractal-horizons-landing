@@ -183,23 +183,23 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-6 text-center">
         <div className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground animate-fade-up">
           <img src={logoAsset.url} alt="" className="h-4 w-4 rounded-sm" />
-          Transformando ideias em sistemas que escalam
+          Agência especializada em sites, SEO e Google Ads
         </div>
 
         <h1
           className="font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl animate-fade-up"
           style={{ animationDelay: "0.1s" }}
         >
-          Tecnologia que acelera o<br />
-          <span className="text-gradient">crescimento da sua empresa</span>
+          Sites e Landing Pages que<br />
+          <span className="text-gradient">transformam visitantes em clientes</span>
         </h1>
 
         <p
           className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground md:text-lg animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Criamos sites, sistemas, automações e soluções com inteligência artificial
-          para empresas que desejam vender mais, reduzir custos e escalar operações.
+          Desenvolvemos presença digital profissional, otimizada para conversão,
+          visibilidade e crescimento.
         </p>
 
         <div
@@ -266,20 +266,14 @@ export function Hero() {
 
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
-              href="#contato"
-              className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
-            >
-              Solicitar Orçamento
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </a>
-            <a
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
+              className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Falar no WhatsApp
+              Solicitar orçamento no WhatsApp
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
           </div>
         </div>
