@@ -1,9 +1,9 @@
 const steps = [
-  { n: "01", title: "Descoberta e Planejamento", desc: "Entendemos seu negócio, objetivos e desafios." },
-  { n: "02", title: "Design e Prototipação", desc: "Criamos a experiência ideal antes da primeira linha de código." },
-  { n: "03", title: "Desenvolvimento", desc: "Engenharia de alto padrão com tecnologias modernas." },
-  { n: "04", title: "Lançamento", desc: "Deploy, testes e otimização de performance." },
-  { n: "05", title: "Suporte e Evolução", desc: "Acompanhamos sua operação e evoluímos junto com você." },
+  { n: "01", title: "Briefing", desc: "Entendemos seu negócio, público e objetivos de conversão." },
+  { n: "02", title: "Estratégia e Design", desc: "Planejamos a estrutura e criamos um design persuasivo e moderno." },
+  { n: "03", title: "Desenvolvimento", desc: "Construímos seu site com performance, SEO e responsividade." },
+  { n: "04", title: "Publicação", desc: "Lançamos no ar com testes, otimizações e integrações de tráfego." },
+  { n: "05", title: "Resultados", desc: "Acompanhamos métricas e evoluímos para aumentar suas conversões." },
 ];
 
 export function Process() {
@@ -15,7 +15,7 @@ export function Process() {
             Processo
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Como transformamos sua ideia em <span className="text-gradient">resultado</span>
+            Do briefing aos <span className="text-gradient">primeiros clientes</span>
           </h2>
         </div>
 

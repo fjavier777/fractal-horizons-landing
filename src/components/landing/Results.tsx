@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 50, prefix: "+", suffix: "", label: "Projetos Entregues" },
-  { value: 95, prefix: "+", suffix: "%", label: "Clientes Satisfeitos" },
-  { value: 300, prefix: "Até ", suffix: "%", label: "Mais Conversão" },
-  { value: 70, prefix: "−", suffix: "%", label: "em Tarefas Manuais" },
+  { value: 120, prefix: "+", suffix: "", label: "Sites e Landing Pages entregues" },
+  { value: 98, prefix: "+", suffix: "%", label: "Clientes satisfeitos" },
+  { value: 300, prefix: "Até ", suffix: "%", label: "Mais conversão" },
+  { value: 10, prefix: "Top ", suffix: "", label: "no Google com SEO" },
 ];
 
 function useCount(target: number, start: boolean) {

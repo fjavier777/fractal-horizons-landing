@@ -1,16 +1,16 @@
 import {
-  Wrench, Headset, Palette, Gauge, Search, Lock, TrendingUp, Bot,
+  Palette, Gauge, Search, Smartphone, Target, Headset, TrendingUp, ShieldCheck,
 } from "lucide-react";
 
 const items = [
-  { icon: Wrench, label: "Desenvolvimento sob medida" },
-  { icon: Headset, label: "Atendimento próximo" },
+  { icon: Target, label: "Foco em conversão" },
   { icon: Palette, label: "Design premium" },
   { icon: Gauge, label: "Alta performance" },
-  { icon: Search, label: "SEO otimizado" },
-  { icon: Lock, label: "Segurança e confiabilidade" },
-  { icon: TrendingUp, label: "Escalabilidade" },
-  { icon: Bot, label: "Integração com IA" },
+  { icon: Smartphone, label: "100% responsivo" },
+  { icon: Search, label: "Otimizado para SEO" },
+  { icon: TrendingUp, label: "Tráfego qualificado" },
+  { icon: Headset, label: "Atendimento próximo" },
+  { icon: ShieldCheck, label: "Entrega no prazo" },
 ];
 
 export function Differentials() {
@@ -24,6 +24,9 @@ export function Differentials() {
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
             Por que escolher a <span className="text-gradient">Horizonte Fractal</span>?
           </h2>
+          <p className="mt-4 text-muted-foreground">
+            Combinamos design, performance e estratégia para gerar resultado real para o seu negócio.
+          </p>
         </div>
 
         <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4">

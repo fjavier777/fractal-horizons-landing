@@ -1,10 +1,9 @@
 import {
   LayoutTemplate,
   Globe,
-  Server,
-  Smartphone,
-  Brain,
-  Compass,
+  Building2,
+  Search,
+  MousePointerClick,
   MessageCircle,
   ArrowRight,
 } from "lucide-react";
@@ -14,32 +13,27 @@ const services = [
   {
     icon: LayoutTemplate,
     title: "Landing Pages",
-    desc: "Páginas desenvolvidas para converter visitantes em clientes reais.",
+    desc: "Páginas otimizadas para conversão, criadas para transformar visitantes em clientes.",
   },
   {
     icon: Globe,
+    title: "Sites Institucionais",
+    desc: "Presença digital profissional que comunica autoridade, confiança e credibilidade.",
+  },
+  {
+    icon: Building2,
     title: "Sites Corporativos",
-    desc: "Presença digital profissional para empresas modernas e em crescimento.",
+    desc: "Sites modernos e escaláveis para empresas que querem se destacar no mercado.",
   },
   {
-    icon: Server,
-    title: "Sistemas Web",
-    desc: "Soluções sob medida para automatizar processos e operações internas.",
+    icon: Search,
+    title: "SEO",
+    desc: "Otimização para que sua empresa apareça no topo do Google e atraia clientes qualificados.",
   },
   {
-    icon: Smartphone,
-    title: "Aplicativos",
-    desc: "Apps nativos para Android, iOS e soluções multiplataforma.",
-  },
-  {
-    icon: Brain,
-    title: "Inteligência Artificial",
-    desc: "Chatbots, agentes de IA e automações inteligentes para o seu negócio.",
-  },
-  {
-    icon: Compass,
-    title: "Consultoria Tecnológica",
-    desc: "Planejamento digital estratégico para acelerar seus resultados.",
+    icon: MousePointerClick,
+    title: "Google Ads",
+    desc: "Campanhas estratégicas que geram leads e vendas com previsibilidade e retorno.",
   },
 ];
 
@@ -52,11 +46,11 @@ export function Services() {
             Serviços
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Soluções completas para<br />
-            <span className="text-gradient">empresas que escalam</span>
+            Tudo que sua empresa precisa para<br />
+            <span className="text-gradient">vender mais online</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Da estratégia ao deploy. Construímos tecnologia que entrega resultado mensurável.
+            Sites, Landing Pages e tráfego qualificado — soluções completas para atrair, converter e crescer.
           </p>
         </div>
 
@@ -81,13 +75,7 @@ export function Services() {
                     className="inline-flex items-center gap-1.5 rounded-full bg-sunset px-3.5 py-2 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                   >
                     <MessageCircle className="h-3.5 w-3.5" />
-                    WhatsApp
-                  </a>
-                  <a
-                    href="#contato"
-                    className="inline-flex items-center gap-1.5 rounded-full glass px-3.5 py-2 text-xs font-semibold text-foreground transition-colors hover:bg-white/5"
-                  >
-                    Orçamento
+                    Solicitar orçamento
                     <ArrowRight className="h-3 w-3" />
                   </a>
                 </div>

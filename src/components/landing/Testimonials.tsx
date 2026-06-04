@@ -3,21 +3,21 @@ import { Star } from "lucide-react";
 const items = [
   {
     quote:
-      "A Horizonte Fractal entregou uma plataforma robusta em tempo recorde. O time é técnico, atencioso e estratégico — sentimos que estavam comprometidos com o nosso resultado.",
+      "Nosso novo site triplicou a quantidade de pedidos de orçamento em poucas semanas. Profissionalismo e resultado do começo ao fim.",
     name: "Marina Almeida",
     role: "CEO, Vento Sul Logística",
   },
   {
     quote:
-      "Automatizamos 70% dos processos manuais com IA. O ROI veio em poucas semanas e o suporte continuado nos dá total previsibilidade.",
+      "A Landing Page que a Horizonte Fractal criou tem uma taxa de conversão muito acima da média. Investimento que se pagou rápido.",
     name: "Rafael Monteiro",
-    role: "Diretor de Operações, Nexa Saúde",
+    role: "Diretor Comercial, Nexa Saúde",
   },
   {
     quote:
-      "Design premium, performance impecável e uma atenção a detalhes raríssima no mercado. Nosso site triplicou a taxa de conversão.",
+      "Com SEO e Google Ads bem feitos, passamos a aparecer no topo do Google e atrair clientes qualificados todos os dias.",
     name: "Camila Duarte",
-    role: "CMO, Atlas Capital",
+    role: "Sócia, Atlas Consultoria",
   },
 ];
 
@@ -30,7 +30,7 @@ export function Testimonials() {
             Depoimentos
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Empresas que <span className="text-gradient">cresceram com a gente</span>
+            Empresas que <span className="text-gradient">vendem mais com a gente</span>
           </h2>
         </div>
 
