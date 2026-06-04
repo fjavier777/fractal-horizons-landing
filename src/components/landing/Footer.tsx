@@ -15,7 +15,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-              Transformando ideias em sistemas que escalam.
+              Sites e Landing Pages que transformam visitantes em clientes.
             </p>
             <div className="mt-5 flex gap-2">
               {[
@@ -55,7 +55,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border/60 pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} Horizonte Fractal. Todos os direitos reservados.</p>
-          <p>Tecnologia inteligente para empresas que querem crescer sem limites.</p>
+          <p>Sites, Landing Pages, SEO e Google Ads para empresas que querem crescer.</p>
         </div>
       </div>
     </footer>

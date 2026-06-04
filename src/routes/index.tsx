@@ -13,17 +13,17 @@ import { Footer } from "@/components/landing/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Horizonte Fractal — Tecnologia que acelera o crescimento da sua empresa" },
+      { title: "Horizonte Fractal — Sites e Landing Pages que transformam visitantes em clientes" },
       {
         name: "description",
         content:
-          "Sites, sistemas, automações e soluções com inteligência artificial para empresas que querem vender mais, reduzir custos e escalar operações.",
+          "Agência especializada em Landing Pages, Sites Institucionais, Sites Corporativos, SEO e Google Ads. Presença digital profissional, otimizada para conversão e crescimento.",
       },
-      { property: "og:title", content: "Horizonte Fractal — Tecnologia inteligente para empresas que querem crescer sem limites" },
+      { property: "og:title", content: "Horizonte Fractal — Sites e Landing Pages que vendem" },
       {
         property: "og:description",
         content:
-          "Desenvolvimento sob medida: landing pages, sites corporativos, sistemas web, apps e IA. Transformamos ideias em sistemas que escalam.",
+          "Landing Pages, Sites Institucionais e Corporativos, SEO e Google Ads para pequenas e médias empresas que querem vender mais online.",
       },
       { property: "og:type", content: "website" },
     ],
