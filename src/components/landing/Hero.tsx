@@ -12,9 +12,9 @@ import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
 import { getWhatsAppUrl, servicesList } from "@/lib/whatsapp";
 
 const badges = [
-  { icon: Zap, label: "Atendimento rápido" },
-  { icon: Sparkles, label: "Soluções sob medida" },
-  { icon: ShieldCheck, label: "Tecnologia de ponta" },
+  { icon: Zap, label: "Entrega rápida" },
+  { icon: Sparkles, label: "Design premium" },
+  { icon: ShieldCheck, label: "Foco em conversão" },
 ];
 
 const allOptions = ["Geral", ...servicesList];
