@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Horizonte Fractal | Landing Pages e Sites que Convertem" },
+      { name: "description", content: "Horizonte Fractal cria sites e landing pages de alta conversão para aumentar sua visibilidade, gerar leads e conquistar mais clientes." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Horizonte Fractal | Landing Pages e Sites que Convertem" },
+      { property: "og:description", content: "Horizonte Fractal cria sites e landing pages de alta conversão para aumentar sua visibilidade, gerar leads e conquistar mais clientes." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Horizonte Fractal | Landing Pages e Sites que Convertem" },
+      { name: "twitter:description", content: "Horizonte Fractal cria sites e landing pages de alta conversão para aumentar sua visibilidade, gerar leads e conquistar mais clientes." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Qj4rx55C9NWoCCD3FSO3wFi1Bpk2/social-images/social-1780591805005-Banner_LinkedIn_1200x630_com_gradiente.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/Qj4rx55C9NWoCCD3FSO3wFi1Bpk2/social-images/social-1780591805005-Banner_LinkedIn_1200x630_com_gradiente.webp" },
     ],
     links: [
       {
