@@ -1,5 +1,5 @@
 // WhatsApp message templates per service
-const PHONE = "5500000000000";
+const PHONE = "5519993931841";
 
 const messages: Record<string, string> = {
   default:
