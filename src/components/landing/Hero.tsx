@@ -6,6 +6,9 @@ import {
   Zap,
   ShieldCheck,
   ChevronDown,
+  Check,
+  Globe,
+  ExternalLink,
 } from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
@@ -15,6 +18,13 @@ const badges = [
   { icon: Zap, label: "Entrega rápida" },
   { icon: Sparkles, label: "Design premium" },
   { icon: ShieldCheck, label: "Foco em conversão" },
+];
+
+const benefits = [
+  "Design profissional",
+  "SEO otimizado",
+  "Integração com WhatsApp",
+  "Entrega rápida",
 ];
 
 const allOptions = ["Geral", ...servicesList];
@@ -57,7 +67,6 @@ export function Hero() {
   useEffect(() => {
     if (open) {
       setHighlightedIndex(currentIndex);
-      // Focus the currently selected option when opening
       requestAnimationFrame(() => {
         optionRefs.current[currentIndex]?.focus();
       });
@@ -102,7 +111,6 @@ export function Hero() {
         if (open) {
           e.preventDefault();
           closeListbox();
-          // Move focus to next focusable element after trigger
           const focusableElements = document.querySelectorAll<HTMLElement>(
             'a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])'
           );
@@ -157,7 +165,6 @@ export function Hero() {
       case "Tab":
         e.preventDefault();
         closeListbox();
-        // Move focus to next focusable element after trigger
         const focusableElements = document.querySelectorAll<HTMLElement>(
           'a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])'
         );
@@ -181,32 +188,56 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 grid-pattern" aria-hidden />
 
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <div className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground animate-fade-up">
+        {/* Badge */}
+        <div
+          className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground animate-fade-up"
+        >
           <img src={logoAsset.url} alt="" className="h-4 w-4 rounded-sm" />
           Agência especializada em sites, SEO e Google Ads
         </div>
 
+        {/* Headline */}
         <h1
-          className="font-display text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl animate-fade-up"
+          className="font-display text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-up"
           style={{ animationDelay: "0.1s" }}
         >
-          Sites e Landing Pages que<br />
+          Sites e Landing Pages que{" "}
           <span className="text-gradient">transformam visitantes em clientes</span>
         </h1>
 
+        {/* Subheadline */}
         <p
-          className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground md:text-lg animate-fade-up"
+          className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg md:text-xl animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Desenvolvemos presença digital profissional, otimizada para conversão,
-          visibilidade e crescimento.
+          Projetamos experiências digitais modernas para empresas que desejam
+          gerar mais oportunidades de negócio.
         </p>
 
+        {/* Benefits */}
         <div
-          className="mt-9 flex flex-col items-center justify-center gap-3 animate-fade-up"
+          className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-3 animate-fade-up"
           style={{ animationDelay: "0.3s" }}
         >
-          {/* Dropdown de serviço - Acessível */}
+          {benefits.map((benefit) => (
+            <span
+              key={benefit}
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground"
+            >
+              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-orange/15">
+                <Check className="h-3 w-3 text-brand-orange" strokeWidth={3} />
+              </span>
+              {benefit}
+            </span>
+          ))}
+        </div>
+
+        {/* Service selector + CTA buttons */}
+        <div
+          className="mt-9 flex flex-col items-center justify-center gap-4 animate-fade-up"
+          style={{ animationDelay: "0.4s" }}
+        >
+          {/* Dropdown */}
           <div className="relative w-full max-w-xs">
             <button
               ref={triggerRef}
@@ -264,23 +295,42 @@ export function Hero() {
             )}
           </div>
 
+          {/* Buttons */}
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a
               href={whatsappUrl}
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 rounded-full bg-sunset px-7 py-3.5 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Solicitar orçamento no WhatsApp
+              Solicitar Orçamento
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+            </a>
+
+            <a
+              href="#portfolio"
+              className="group inline-flex items-center gap-2 rounded-full glass px-7 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
+            >
+              Ver Portfólio
+              <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
         </div>
 
+        {/* Trust indicator */}
         <div
-          className="mt-8 flex flex-wrap items-center justify-center gap-2 animate-fade-up"
-          style={{ animationDelay: "0.4s" }}
+          className="mt-6 flex items-center justify-center gap-2 text-xs text-muted-foreground animate-fade-up"
+          style={{ animationDelay: "0.5s" }}
+        >
+          <Globe className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
+          <span>Atendimento para empresas em todo o Brasil</span>
+        </div>
+
+        {/* Badges */}
+        <div
+          className="mt-6 flex flex-wrap items-center justify-center gap-2 animate-fade-up"
+          style={{ animationDelay: "0.55s" }}
         >
           {badges.map((b) => (
             <span
@@ -293,15 +343,16 @@ export function Hero() {
           ))}
         </div>
 
+        {/* Hero image */}
         <div
           className="relative mx-auto mt-16 max-w-5xl animate-fade-up"
-          style={{ animationDelay: "0.5s" }}
+          style={{ animationDelay: "0.6s" }}
         >
           <div className="absolute -inset-x-10 -top-10 bottom-0 -z-10 bg-sunset opacity-30 blur-3xl" />
           <div className="overflow-hidden rounded-2xl glass p-2 glow">
             <img
               src={heroImage}
-              alt="Mockups de dashboards, analytics e automações desenvolvidos pela Horizonte Fractal"
+              alt="Mockups de sites e landing pages desenvolvidos pela Horizonte Fractal"
               width={1920}
               height={1080}
               className="w-full rounded-xl"
