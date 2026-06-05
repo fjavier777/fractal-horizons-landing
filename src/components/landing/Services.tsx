@@ -1,9 +1,9 @@
 import {
-  LayoutTemplate,
-  Globe,
+  Rocket,
   Building2,
+  Briefcase,
   Search,
-  MousePointerClick,
+  Megaphone,
   MessageCircle,
   ArrowRight,
 } from "lucide-react";
@@ -11,29 +11,29 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const services = [
   {
-    icon: LayoutTemplate,
+    icon: Rocket,
     title: "Landing Pages",
-    desc: "Páginas otimizadas para conversão, criadas para transformar visitantes em clientes.",
-  },
-  {
-    icon: Globe,
-    title: "Sites Institucionais",
-    desc: "Presença digital profissional que comunica autoridade, confiança e credibilidade.",
+    desc: "Páginas focadas em geração de leads e vendas.",
   },
   {
     icon: Building2,
+    title: "Sites Institucionais",
+    desc: "Presença digital profissional para fortalecer sua marca.",
+  },
+  {
+    icon: Briefcase,
     title: "Sites Corporativos",
-    desc: "Sites modernos e escaláveis para empresas que querem se destacar no mercado.",
+    desc: "Soluções completas para empresas que precisam de credibilidade online.",
   },
   {
     icon: Search,
     title: "SEO",
-    desc: "Otimização para que sua empresa apareça no topo do Google e atraia clientes qualificados.",
+    desc: "Melhore seu posicionamento no Google e atraia clientes organicamente.",
   },
   {
-    icon: MousePointerClick,
+    icon: Megaphone,
     title: "Google Ads",
-    desc: "Campanhas estratégicas que geram leads e vendas com previsibilidade e retorno.",
+    desc: "Campanhas estratégicas para gerar resultados rapidamente.",
   },
 ];
 
@@ -43,10 +43,10 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Serviços
+            Nossos Serviços
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Tudo que sua empresa precisa para<br />
+            Soluções para{" "}
             <span className="text-gradient">vender mais online</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
@@ -55,14 +55,15 @@ export function Services() {
         </div>
 
         <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((s) => (
+          {services.map((s, i) => (
             <article
               key={s.title}
-              className="group relative overflow-hidden rounded-2xl glass p-6 transition-all hover:-translate-y-1 hover:border-brand-orange/40"
+              className="group relative overflow-hidden rounded-2xl glass p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand-orange/40 animate-fade-up"
+              style={{ animationDelay: `${0.1 * (i + 1)}s` }}
             >
               <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-sunset opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-40" />
               <div className="relative">
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-sunset text-primary-foreground shadow-lg">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-sunset text-primary-foreground shadow-lg transition-transform duration-300 group-hover:scale-110">
                   <s.icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-semibold">{s.title}</h3>
@@ -75,7 +76,7 @@ export function Services() {
                     className="inline-flex items-center gap-1.5 rounded-full bg-sunset px-3.5 py-2 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                   >
                     <MessageCircle className="h-3.5 w-3.5" />
-                    Solicitar orçamento
+                    Solicitar Orçamento
                     <ArrowRight className="h-3 w-3" />
                   </a>
                 </div>
