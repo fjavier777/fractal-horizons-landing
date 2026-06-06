@@ -19,9 +19,8 @@ export function Footer() {
             </p>
             <div className="mt-5 flex gap-2">
               {[
-                { Icon: Linkedin, href: "#", label: "LinkedIn" },
-                { Icon: Instagram, href: "#", label: "Instagram" },
-                { Icon: Github, href: "#", label: "GitHub" },
+                { Icon: Instagram, href: "https://www.instagram.com/horizontefractal.web/", label: "Instagram" },
+                { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61590574383706", label: "Facebook" },
                 { Icon: Mail, href: "mailto:horizontefractal@gmail.com", label: "E-mail" },
               ].map(({ Icon, href, label }) => (
                 <a
