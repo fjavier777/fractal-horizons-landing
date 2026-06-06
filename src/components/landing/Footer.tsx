@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { Facebook, Instagram, Mail } from "lucide-react";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
