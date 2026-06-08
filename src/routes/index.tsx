@@ -13,6 +13,7 @@ import { PreCta } from "@/components/landing/PreCta";
 import { SupportPlans } from "@/components/landing/SupportPlans";
 import { CtaFinal } from "@/components/landing/CtaFinal";
 import { Footer } from "@/components/landing/Footer";
+import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -61,6 +62,7 @@ function Index() {
       <PreCta />
       <CtaFinal />
       <Footer />
+      <WhatsAppFloat />
     </main>
   );
 }
