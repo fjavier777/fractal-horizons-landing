@@ -10,6 +10,7 @@ import { Tech } from "@/components/landing/Tech";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Projects } from "@/components/landing/Projects";
 import { PreCta } from "@/components/landing/PreCta";
+import { SupportPlans } from "@/components/landing/SupportPlans";
 import { CtaFinal } from "@/components/landing/CtaFinal";
 import { Footer } from "@/components/landing/Footer";
 
@@ -56,6 +57,7 @@ function Index() {
       <Results />
       <Projects />
       <Testimonials />
+      <SupportPlans />
       <PreCta />
       <CtaFinal />
       <Footer />
