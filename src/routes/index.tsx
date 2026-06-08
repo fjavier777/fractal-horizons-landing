@@ -8,6 +8,7 @@ import { Process } from "@/components/landing/Process";
 import { Results } from "@/components/landing/Results";
 import { Tech } from "@/components/landing/Tech";
 import { Testimonials } from "@/components/landing/Testimonials";
+import { Projects } from "@/components/landing/Projects";
 import { PreCta } from "@/components/landing/PreCta";
 import { CtaFinal } from "@/components/landing/CtaFinal";
 import { Footer } from "@/components/landing/Footer";
@@ -53,6 +54,7 @@ function Index() {
       <Differentials />
       <Process />
       <Results />
+      <Projects />
       <Testimonials />
       <PreCta />
       <CtaFinal />
