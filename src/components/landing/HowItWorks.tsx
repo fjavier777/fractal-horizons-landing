@@ -9,32 +9,32 @@ import {
 const steps = [
   {
     n: "01",
-    title: "Diagnóstico",
-    desc: "Entendemos seus objetivos.",
+    title: "Diagnóstico estratégico",
+    desc: "Mapeamos gargalos, oportunidades e onde a tecnologia gera mais valor no seu negócio.",
     icon: ClipboardCheck,
   },
   {
     n: "02",
-    title: "Planejamento",
-    desc: "Definimos a melhor estratégia.",
+    title: "Arquitetura da solução",
+    desc: "Desenhamos a solução ideal com IA, automações e integrações para o seu contexto.",
     icon: Map,
   },
   {
     n: "03",
-    title: "Design e Desenvolvimento",
-    desc: "Criamos sua presença digital.",
+    title: "Engenharia e IA",
+    desc: "Construímos software, agentes e fluxos automatizados com padrão de mercado enterprise.",
     icon: Code2,
   },
   {
     n: "04",
-    title: "Publicação",
-    desc: "Colocamos seu projeto no ar.",
+    title: "Go-live e integração",
+    desc: "Colocamos em produção com segurança, observabilidade e integração aos seus sistemas.",
     icon: Rocket,
   },
   {
     n: "05",
-    title: "Crescimento",
-    desc: "Acompanhamos sua evolução.",
+    title: "Escala contínua",
+    desc: "Evoluímos a solução com base em dados para escalar receita, produtividade e margem.",
     icon: TrendingUp,
   },
 ];
@@ -45,13 +45,14 @@ export function HowItWorks() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Como Funciona
+            Como Trabalhamos
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Seu projeto do zero ao ar em{" "}
-            <span className="text-gradient">5 passos</span>
+            Da estratégia à{" "}
+            <span className="text-gradient">escala inteligente</span>
           </h2>
         </div>
+
 
         <div className="relative mt-16">
           {/* Timeline connector line */}

@@ -1,9 +1,9 @@
 const steps = [
-  { n: "01", title: "Briefing", desc: "Entendemos seu negócio, público e objetivos de conversão." },
-  { n: "02", title: "Estratégia e Design", desc: "Planejamos a estrutura e criamos um design persuasivo e moderno." },
-  { n: "03", title: "Desenvolvimento", desc: "Construímos seu site com performance, SEO e responsividade." },
-  { n: "04", title: "Publicação", desc: "Lançamos no ar com testes, otimizações e integrações de tráfego." },
-  { n: "05", title: "Resultados", desc: "Acompanhamos métricas e evoluímos para aumentar suas conversões." },
+  { n: "01", title: "Discovery", desc: "Mergulhamos no seu negócio, dados e objetivos para identificar onde a tecnologia gera mais impacto." },
+  { n: "02", title: "Estratégia & Arquitetura", desc: "Definimos o roadmap, a stack e a arquitetura de IA, automação e software mais adequada." },
+  { n: "03", title: "Engenharia", desc: "Construímos com práticas modernas: cloud, observabilidade, segurança e IA de ponta." },
+  { n: "04", title: "Go-live", desc: "Implantamos com testes rigorosos, integrações e monitoramento contínuo do primeiro dia." },
+  { n: "05", title: "Escala & Evolução", desc: "Acompanhamos métricas de negócio e evoluímos a solução para maximizar ROI." },
 ];
 
 export function Process() {
@@ -12,10 +12,10 @@ export function Process() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Processo
+            Metodologia
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Do briefing aos <span className="text-gradient">primeiros clientes</span>
+            Da visão estratégica ao <span className="text-gradient">impacto no P&L</span>
           </h2>
         </div>
 

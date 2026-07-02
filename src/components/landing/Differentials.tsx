@@ -1,16 +1,16 @@
 import {
-  Palette, Gauge, Search, Smartphone, Target, Headset, TrendingUp, ShieldCheck,
+  BrainCircuit, Gauge, ShieldCheck, Smartphone, Target, Headset, TrendingUp, Layers,
 } from "lucide-react";
 
 const items = [
-  { icon: Target, label: "Foco em conversão" },
-  { icon: Palette, label: "Design premium" },
-  { icon: Gauge, label: "Alta performance" },
-  { icon: Smartphone, label: "100% responsivo" },
-  { icon: Search, label: "Otimizado para SEO" },
-  { icon: TrendingUp, label: "Tráfego qualificado" },
-  { icon: Headset, label: "Atendimento próximo" },
-  { icon: ShieldCheck, label: "Entrega no prazo" },
+  { icon: Target, label: "Foco em resultado de negócio" },
+  { icon: BrainCircuit, label: "IA aplicada com propósito" },
+  { icon: Gauge, label: "Performance de padrão enterprise" },
+  { icon: Layers, label: "Arquitetura escalável" },
+  { icon: TrendingUp, label: "Crescimento previsível" },
+  { icon: ShieldCheck, label: "Segurança e confiabilidade" },
+  { icon: Smartphone, label: "Experiência multi-dispositivo" },
+  { icon: Headset, label: "Parceria estratégica de longo prazo" },
 ];
 
 export function Differentials() {
@@ -19,13 +19,14 @@ export function Differentials() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Diferenciais
+            Autoridade
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Por que escolher a <span className="text-gradient">Horizonte Fractal</span>?
+            Por que empresas escolhem a <span className="text-gradient">Horizonte Fractal</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Combinamos design, performance e estratégia para gerar resultado real para o seu negócio.
+            Combinamos visão estratégica, engenharia sólida e inteligência
+            artificial para gerar impacto real onde importa: no seu resultado.
           </p>
         </div>
 
