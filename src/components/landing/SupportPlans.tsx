@@ -5,26 +5,30 @@ const plans = [
   {
     name: "Essencial",
     price: "149",
-    tagline: "Mantenha seu site no ar com segurança.",
-    features: ["Hospedagem", "Backup", "Atualizações básicas"],
+    tagline: "Sustente sua operação digital com estabilidade.",
+    features: ["Hospedagem e infraestrutura", "Backups automáticos", "Monitoramento contínuo"],
     highlight: false,
   },
   {
     name: "Crescimento",
     price: "299",
-    tagline: "Cresça com presença digital otimizada.",
-    features: ["Hospedagem", "SEO básico", "Relatório mensal"],
+    tagline: "Evolua sua tecnologia com foco em performance.",
+    features: [
+      "Infraestrutura otimizada",
+      "Automações e melhorias contínuas",
+      "Relatórios mensais de performance",
+    ],
     highlight: true,
   },
   {
     name: "Performance",
     price: "599",
-    tagline: "Resultados consistentes e escaláveis.",
+    tagline: "Escale com dados, IA e evolução constante.",
     features: [
-      "SEO",
-      "Ajustes contínuos",
-      "Landing Pages de campanha",
-      "Relatórios de desempenho",
+      "Otimização estratégica contínua",
+      "Automações e integrações avançadas",
+      "Squad de tecnologia dedicado",
+      "Relatórios executivos de impacto",
     ],
     highlight: false,
   },
@@ -36,13 +40,14 @@ export function SupportPlans() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Suporte e Evolução
+            Evolução Contínua
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Planos para <span className="text-gradient">manter e crescer</span>
+            Planos para <span className="text-gradient">escalar com inteligência</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Escolha o nível de acompanhamento ideal para o seu projeto digital.
+            Parceria contínua para manter sua tecnologia performando e evoluindo
+            no ritmo do seu crescimento.
           </p>
         </div>
 
@@ -109,7 +114,7 @@ export function SupportPlans() {
                   }`}
                 >
                   <MessageCircle className="h-4 w-4" />
-                  Quero este plano
+                  Falar sobre este plano
                 </a>
               </div>
             </article>

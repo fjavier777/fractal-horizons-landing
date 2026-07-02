@@ -15,8 +15,9 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-              Sites e Landing Pages que transformam visitantes em clientes.
+              Tecnologia, IA e automação para acelerar o crescimento de empresas ambiciosas.
             </p>
+
             <div className="mt-5 flex gap-2">
               {[
                 { Icon: Instagram, href: "https://www.instagram.com/horizontefractal.web/", label: "Instagram" },
@@ -37,10 +38,11 @@ export function Footer() {
 
           <nav className="flex flex-wrap gap-x-10 gap-y-3 md:justify-end" aria-label="Rodapé">
             {[
-              { label: "Serviços", href: "#servicos" },
-              { label: "Portfólio", href: "#resultados" },
+              { label: "Soluções", href: "#servicos" },
+              { label: "Cases", href: "#projetos" },
               { label: "Contato", href: "#contato" },
               { label: "WhatsApp", href: getWhatsAppUrl() },
+
             ].map((l) => (
               <a
                 key={l.label}
@@ -55,7 +57,8 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border/60 pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} Horizonte Fractal. Todos os direitos reservados.</p>
-          <p>Sites, Landing Pages, SEO e Google Ads para empresas que querem crescer.</p>
+          <p>IA, automação, software sob medida e transformação digital para empresas em crescimento.</p>
+
         </div>
       </div>
     </footer>
