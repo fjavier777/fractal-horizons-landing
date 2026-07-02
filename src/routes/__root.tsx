@@ -77,9 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Horizonte Fractal | Landing Pages, Sites e Marketing Digital" },
-      { name: "description", content: "Criamos landing pages, sites institucionais, SEO e campanhas Google Ads para empresas que desejam crescer e gerar mais clientes." },
+      { title: "Horizonte Fractal | IA, Automação e Transformação Digital para Empresas" },
+      { name: "description", content: "Aceleramos o crescimento de empresas com Inteligência Artificial, automação de processos, desenvolvimento de software sob medida e transformação digital." },
       { name: "author", content: "Horizonte Fractal" },
+
       { name: "theme-color", content: "#0d0d0d" },
       { property: "og:site_name", content: "Horizonte Fractal" },
       { property: "og:locale", content: "pt_BR" },
