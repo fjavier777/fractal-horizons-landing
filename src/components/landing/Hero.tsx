@@ -194,7 +194,7 @@ export function Hero() {
           className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground animate-fade-up"
         >
           <img src={logoAsset.url} alt="" className="h-4 w-4 rounded-sm" />
-          Agência especializada em sites, SEO e Google Ads
+          Tecnologia, IA e Automação para acelerar o crescimento de empresas
         </div>
 
         {/* Headline */}
@@ -202,8 +202,8 @@ export function Hero() {
           className="font-display text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-up"
           style={{ animationDelay: "0.1s" }}
         >
-          Sites e Landing Pages que{" "}
-          <span className="text-gradient">transformam visitantes em clientes</span>
+          Transformamos empresas através da{" "}
+          <span className="text-gradient">tecnologia e da inteligência artificial</span>
         </h1>
 
         {/* Subheadline */}
@@ -211,8 +211,9 @@ export function Hero() {
           className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg md:text-xl animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Projetamos experiências digitais modernas para empresas que desejam
-          gerar mais oportunidades de negócio.
+          Criamos soluções inteligentes que automatizam processos, escalam
+          operações e aceleram o faturamento de negócios que decidiram crescer.
+
         </p>
 
         {/* Benefits */}
