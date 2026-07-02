@@ -2,11 +2,12 @@ import { CheckCircle2, Clock, MessageCircle, ArrowRight } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const benefits = [
-  "Orçamento sem compromisso",
-  "Atendimento rápido",
-  "Projeto personalizado",
-  "Suporte especializado",
+  "Diagnóstico estratégico gratuito",
+  "Resposta ágil e consultiva",
+  "Solução sob medida",
+  "Parceria de longo prazo",
 ];
+
 
 export function PreCta() {
   return (
@@ -19,13 +20,14 @@ export function PreCta() {
 
           <h2 className="font-display text-4xl font-semibold md:text-5xl">
             Pronto para{" "}
-            <span className="text-gradient">atrair mais clientes?</span>
+            <span className="text-gradient">acelerar o crescimento da sua empresa?</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Dê o primeiro passo para transformar sua presença digital e começar a
-            gerar resultados para o seu negócio.
+            Agende uma conversa estratégica e descubra como IA, automação e
+            software sob medida podem transformar seu resultado.
           </p>
+
 
           {/* Benefits */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
@@ -45,8 +47,9 @@ export function PreCta() {
             </div>
             <div className="text-left">
               <p className="text-sm font-semibold text-foreground">Resposta em até 24 horas</p>
-              <p className="text-xs text-muted-foreground">Orçamento sem compromisso</p>
+              <p className="text-xs text-muted-foreground">Conversa estratégica sem compromisso</p>
             </div>
+
           </div>
 
           {/* CTA */}
@@ -58,8 +61,9 @@ export function PreCta() {
               className="group inline-flex items-center gap-2 rounded-full bg-sunset px-7 py-3.5 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Solicitar Orçamento
+              Falar com um especialista
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+
             </a>
           </div>
         </div>

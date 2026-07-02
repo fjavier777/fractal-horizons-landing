@@ -1,9 +1,10 @@
 import {
+  BrainCircuit,
+  Workflow,
+  Code2,
   Rocket,
-  Building2,
-  Briefcase,
-  Search,
-  Megaphone,
+  LineChart,
+  Layers,
   MessageCircle,
   ArrowRight,
 } from "lucide-react";
@@ -11,29 +12,34 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const services = [
   {
+    icon: BrainCircuit,
+    title: "Inteligência Artificial Aplicada",
+    desc: "Agentes, copilots e modelos preditivos que aumentam produtividade e criam vantagem competitiva real.",
+  },
+  {
+    icon: Workflow,
+    title: "Automação de Processos",
+    desc: "Eliminamos tarefas repetitivas e conectamos sistemas para reduzir custo operacional e escalar sua operação.",
+  },
+  {
+    icon: Code2,
+    title: "Desenvolvimento de Software Sob Medida",
+    desc: "Plataformas, dashboards e sistemas internos construídos para resolver o seu problema — não um problema genérico.",
+  },
+  {
+    icon: Layers,
+    title: "Transformação Digital",
+    desc: "Diagnóstico estratégico e roadmap para modernizar sua empresa com tecnologia, dados e novos modelos de negócio.",
+  },
+  {
     icon: Rocket,
-    title: "Landing Pages",
-    desc: "Páginas focadas em geração de leads e vendas.",
+    title: "Presença Digital de Alta Performance",
+    desc: "Sites, landing pages e produtos web construídos para posicionar autoridade e converter oportunidades qualificadas.",
   },
   {
-    icon: Building2,
-    title: "Sites Institucionais",
-    desc: "Presença digital profissional para fortalecer sua marca.",
-  },
-  {
-    icon: Briefcase,
-    title: "Sites Corporativos",
-    desc: "Soluções completas para empresas que precisam de credibilidade online.",
-  },
-  {
-    icon: Search,
-    title: "SEO",
-    desc: "Melhore seu posicionamento no Google e atraia clientes organicamente.",
-  },
-  {
-    icon: Megaphone,
-    title: "Google Ads",
-    desc: "Campanhas estratégicas para gerar resultados rapidamente.",
+    icon: LineChart,
+    title: "Aceleração de Crescimento",
+    desc: "SEO, mídia paga e analytics unificados em uma máquina previsível de aquisição de clientes.",
   },
 ];
 
@@ -43,14 +49,15 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Nossos Serviços
+            O que fazemos
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Soluções para{" "}
-            <span className="text-gradient">vender mais online</span>
+            Soluções inteligentes para{" "}
+            <span className="text-gradient">acelerar o seu crescimento</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Sites, Landing Pages e tráfego qualificado — soluções completas para atrair, converter e crescer.
+            Unimos IA, automação, engenharia de software e estratégia digital em
+            um único parceiro focado no resultado do seu negócio.
           </p>
         </div>
 
@@ -76,7 +83,7 @@ export function Services() {
                     className="inline-flex items-center gap-1.5 rounded-full bg-sunset px-3.5 py-2 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                   >
                     <MessageCircle className="h-3.5 w-3.5" />
-                    Solicitar Orçamento
+                    Conversar com um especialista
                     <ArrowRight className="h-3 w-3" />
                   </a>
                 </div>

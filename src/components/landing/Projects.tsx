@@ -7,30 +7,31 @@ import corporateImg from "@/assets/project-corporate.jpg";
 
 const projects = [
   {
-    title: "Landing Page Comercial",
-    category: "Landing Page",
-    desc: "Página de alta conversão para captação de leads qualificados.",
+    title: "Motor de Aquisição Digital",
+    category: "Growth & IA",
+    desc: "Landing pages, tracking e automações de qualificação com IA para acelerar o pipeline comercial.",
     image: landingImg,
   },
   {
     title: "ImpactFlow",
     category: "Plataforma SaaS",
-    desc: "Plataforma moderna com dashboard analítico e identidade visual marcante.",
+    desc: "Plataforma analítica com dashboards, integrações e camada de inteligência para decisões orientadas a dados.",
     image: impactflowImg,
   },
   {
-    title: "Site para Transportadora",
-    category: "Site Corporativo",
-    desc: "Presença digital robusta para empresa de logística e transporte.",
+    title: "Operação Digital para Logística",
+    category: "Transformação Digital",
+    desc: "Modernização do fluxo operacional de uma transportadora com automação e integração de sistemas.",
     image: transportImg,
   },
   {
-    title: "Projeto Corporativo",
-    category: "Site Institucional",
-    desc: "Website elegante com foco em credibilidade e autoridade no mercado.",
+    title: "Presença Corporativa Premium",
+    category: "Autoridade Digital",
+    desc: "Portal institucional posicionando a empresa como referência técnica e comercial no seu mercado.",
     image: corporateImg,
   },
 ];
+
 
 export function Projects() {
   return (
@@ -38,15 +39,16 @@ export function Projects() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Portfólio
+            Cases
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Projetos em <span className="text-gradient">Destaque</span>
+            Tecnologia em <span className="text-gradient">movimento</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Trabalhos selecionados que combinam design premium, performance e resultado real.
+            Projetos selecionados de IA, automação, software e presença digital que geraram impacto mensurável.
           </p>
         </div>
+
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
           {projects.map((p, i) => (
@@ -86,7 +88,8 @@ export function Projects() {
                     className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background/40 px-4 py-2 text-xs font-semibold transition-all hover:border-brand-orange/60 hover:bg-sunset hover:text-primary-foreground"
                   >
                     <Eye className="h-3.5 w-3.5" />
-                    Visualizar Projeto
+                    Falar com um especialista
+
                   </a>
                 </div>
               </div>

@@ -9,12 +9,12 @@ export function CtaFinal() {
           <div className="absolute inset-0 -z-10 bg-sunset opacity-20" />
           <div className="absolute -bottom-20 left-1/2 -z-10 h-64 w-[120%] -translate-x-1/2 rounded-full bg-sunset opacity-30 blur-3xl" />
           <h2 className="font-display text-4xl font-semibold md:text-5xl">
-            Pronto para ter um site que<br />
-            <span className="text-gradient">vende todos os dias?</span>
+            Vamos transformar sua empresa com<br />
+            <span className="text-gradient">tecnologia e inteligência</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
-            Solicite um orçamento sem compromisso e descubra como podemos transformar
-            visitantes em clientes para a sua empresa.
+            Agende uma conversa estratégica e descubra o caminho mais curto entre
+            a sua operação atual e o próximo patamar de crescimento.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
@@ -24,8 +24,9 @@ export function CtaFinal() {
               className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Solicitar orçamento no WhatsApp
+              Falar com um especialista
             </a>
+
             <a
               href="mailto:horizontefractal@gmail.com"
               className="group inline-flex items-center gap-2 rounded-full glass px-6 py-3 text-sm font-semibold text-foreground transition-transform hover:-translate-y-0.5"

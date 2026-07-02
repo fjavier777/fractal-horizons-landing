@@ -17,14 +17,15 @@ import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
 
 export const Route = createFileRoute("/")({
   head: () => {
-    const title = "Horizonte Fractal | Landing Pages, Sites e Marketing Digital";
+    const title = "Horizonte Fractal | IA, Automação e Transformação Digital para Empresas";
     const description =
-      "Criamos landing pages, sites institucionais, SEO e campanhas Google Ads para empresas que desejam crescer e gerar mais clientes.";
+      "Aceleramos o crescimento de empresas com Inteligência Artificial, automação de processos, desenvolvimento de software sob medida e transformação digital.";
     const url = "https://fractal-growth-engine.lovable.app/";
     const image =
       "https://storage.googleapis.com/gpt-engineer-file-uploads/Qj4rx55C9NWoCCD3FSO3wFi1Bpk2/social-images/social-1780591805005-Banner_LinkedIn_1200x630_com_gradiente.webp";
     const keywords =
-      "landing page, criação de sites, site institucional, site corporativo, seo, google ads, marketing digital, agência web, desenvolvimento web, campinas";
+      "inteligência artificial, ia para empresas, automação de processos, desenvolvimento de software, transformação digital, agentes de ia, consultoria de tecnologia, crescimento empresarial, growth, campinas";
+
 
     return {
       meta: [
@@ -79,11 +80,14 @@ export const Route = createFileRoute("/")({
               "https://www.instagram.com/horizontefractal.web/",
             ],
             makesOffer: [
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Criação de Landing Pages" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Sites Institucionais e Corporativos" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "SEO" } },
-              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Google Ads" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Inteligência Artificial Aplicada" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Automação de Processos" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Desenvolvimento de Software Sob Medida" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Transformação Digital" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Presença Digital de Alta Performance" } },
+              { "@type": "Offer", itemOffered: { "@type": "Service", name: "Aceleração de Crescimento (SEO & Ads)" } },
             ],
+
           }),
         },
       ],
