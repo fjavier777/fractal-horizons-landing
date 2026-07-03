@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 120, prefix: "+", suffix: "", label: "Projetos de tecnologia entregues" },
-  { value: 70, prefix: "Até ", suffix: "%", label: "de horas operacionais economizadas com automação" },
-  { value: 3, prefix: "", suffix: "x", label: "de aumento médio em geração de oportunidades" },
-  { value: 98, prefix: "", suffix: "%", label: "de satisfação em clientes recorrentes" },
+  { value: 120, prefix: "+", suffix: "", label: "empresas transformadas por tecnologia" },
+  { value: 70, prefix: "Até ", suffix: "%", label: "de horas devolvidas ao seu time" },
+  { value: 3, prefix: "", suffix: "x", label: "mais oportunidades entrando no funil" },
+  { value: 98, prefix: "", suffix: "%", label: "de clientes que voltam a contratar" },
 ];
 
 
