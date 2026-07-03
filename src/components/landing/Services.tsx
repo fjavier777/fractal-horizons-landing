@@ -13,33 +13,33 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 const services = [
   {
     icon: BrainCircuit,
-    title: "Inteligência Artificial Aplicada",
-    desc: "Agentes, copilots e modelos preditivos que aumentam produtividade e criam vantagem competitiva real.",
+    title: "IA que trabalha por você",
+    desc: "Agentes inteligentes atendem clientes, qualificam leads e tomam decisões. Sua equipe foca no que importa.",
   },
   {
     icon: Workflow,
-    title: "Automação de Processos",
-    desc: "Eliminamos tarefas repetitivas e conectamos sistemas para reduzir custo operacional e escalar sua operação.",
+    title: "Fim do trabalho manual",
+    desc: "Processos que sugavam horas agora rodam sozinhos. Menos erro, menos custo, mais velocidade.",
   },
   {
     icon: Code2,
-    title: "Desenvolvimento de Software Sob Medida",
-    desc: "Plataformas, dashboards e sistemas internos construídos para resolver o seu problema — não um problema genérico.",
+    title: "Software feito pra sua realidade",
+    desc: "Nada de adaptar o negócio ao sistema. Criamos a ferramenta que sua operação sempre precisou.",
   },
   {
     icon: Layers,
-    title: "Transformação Digital",
-    desc: "Diagnóstico estratégico e roadmap para modernizar sua empresa com tecnologia, dados e novos modelos de negócio.",
+    title: "Transformação digital de verdade",
+    desc: "Um plano claro para modernizar sua empresa. Tecnologia com propósito, resultado no P&L.",
   },
   {
     icon: Rocket,
-    title: "Presença Digital de Alta Performance",
-    desc: "Sites, landing pages e produtos web construídos para posicionar autoridade e converter oportunidades qualificadas.",
+    title: "Presença que gera cliente",
+    desc: "Sites e páginas que posicionam sua marca como referência e convertem visita em oportunidade real.",
   },
   {
     icon: LineChart,
-    title: "Aceleração de Crescimento",
-    desc: "SEO, mídia paga e analytics unificados em uma máquina previsível de aquisição de clientes.",
+    title: "Máquina de aquisição previsível",
+    desc: "SEO, mídia paga e dados unidos. Todo mês, novos clientes chegando de forma consistente.",
   },
 ];
 
