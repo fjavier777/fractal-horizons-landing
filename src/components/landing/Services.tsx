@@ -49,15 +49,15 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            O que fazemos
+            Nossas soluções
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Soluções inteligentes para{" "}
-            <span className="text-gradient">acelerar o seu crescimento</span>
+            Tudo que sua empresa precisa{" "}
+            <span className="text-gradient">para crescer sem travar</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Unimos IA, automação, engenharia de software e estratégia digital em
-            um único parceiro focado no resultado do seu negócio.
+            Um único parceiro. Seis frentes de impacto. Zero dor de cabeça
+            entre fornecedores.
           </p>
         </div>
 
