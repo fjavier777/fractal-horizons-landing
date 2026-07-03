@@ -27,10 +27,10 @@ export function Testimonials() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Confiança
+            Quem já vive isso
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Empresas que <span className="text-gradient">crescem com tecnologia</span>
+            Histórias de quem parou de <span className="text-gradient">trabalhar mais e começou a crescer</span>
           </h2>
         </div>
 
