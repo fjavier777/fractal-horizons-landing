@@ -9,26 +9,33 @@ import {
   Check,
   Globe,
   ExternalLink,
+  TrendingUp,
+  Cpu,
+  Layers,
 } from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
 import { getWhatsAppUrl, servicesList } from "@/lib/whatsapp";
 
-const badges = [
-  { icon: Zap, label: "Resultados mensuráveis" },
-  { icon: Sparkles, label: "Inteligência aplicada" },
-  { icon: ShieldCheck, label: "Escala com segurança" },
-];
-
-const benefits = [
-  "IA & Automação",
-  "Software sob medida",
-  "Integrações inteligentes",
-  "ROI comprovado",
-];
-
-
 const allOptions = ["Geral", ...servicesList];
+
+const trustBenefits = [
+  {
+    icon: Cpu,
+    title: "IA & Automação",
+    desc: "Reduza custos operacionais em até 70%",
+  },
+  {
+    icon: Layers,
+    title: "Software Sob Medida",
+    desc: "Soluções construídas para o seu negócio",
+  },
+  {
+    icon: TrendingUp,
+    title: "Crescimento Acelerado",
+    desc: "Resultados mensuráveis em até 90 dias",
+  },
+];
 
 export function Hero() {
   const [selectedService, setSelectedService] = useState<string>("default");
@@ -41,15 +48,14 @@ export function Hero() {
   const triggerId = useId();
 
   const displayLabel =
-    selectedService === "default"
-      ? "Escolha um serviço"
-      : selectedService;
+    selectedService === "default" ? "Escolha um serviço" : selectedService;
 
   const whatsappUrl = getWhatsAppUrl(
     selectedService === "default" ? undefined : selectedService
   );
 
-  const currentIndex = selectedService === "default" ? 0 : allOptions.indexOf(selectedService);
+  const currentIndex =
+    selectedService === "default" ? 0 : allOptions.indexOf(selectedService);
 
   const closeListbox = useCallback(() => {
     setOpen(false);
@@ -115,7 +121,9 @@ export function Hero() {
           const focusableElements = document.querySelectorAll<HTMLElement>(
             'a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])'
           );
-          const triggerIndex = Array.from(focusableElements).indexOf(triggerRef.current!);
+          const triggerIndex = Array.from(focusableElements).indexOf(
+            triggerRef.current!
+          );
           if (e.shiftKey) {
             focusableElements[triggerIndex - 1]?.focus();
           } else {
@@ -126,7 +134,10 @@ export function Hero() {
     }
   };
 
-  const handleOptionKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>, index: number) => {
+  const handleOptionKeyDown = (
+    e: React.KeyboardEvent<HTMLButtonElement>,
+    index: number
+  ) => {
     switch (e.key) {
       case "ArrowDown":
         e.preventDefault();
@@ -139,7 +150,8 @@ export function Hero() {
       case "ArrowUp":
         e.preventDefault();
         setHighlightedIndex((prev) => {
-          const next = (prev - 1 + allOptions.length) % allOptions.length;
+          const next =
+            (prev - 1 + allOptions.length) % allOptions.length;
           optionRefs.current[next]?.focus();
           return next;
         });
@@ -169,7 +181,9 @@ export function Hero() {
         const focusableElements = document.querySelectorAll<HTMLElement>(
           'a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])'
         );
-        const triggerIndex = Array.from(focusableElements).indexOf(triggerRef.current!);
+        const triggerIndex = Array.from(focusableElements).indexOf(
+          triggerRef.current!
+        );
         if (e.shiftKey) {
           focusableElements[triggerIndex - 1]?.focus();
         } else {
@@ -180,64 +194,129 @@ export function Hero() {
   };
 
   return (
-    <section id="top" className="relative overflow-hidden pt-36 pb-24 md:pt-44 md:pb-32">
-      <div
-        className="absolute inset-0 -z-10"
-        style={{ background: "var(--gradient-radial-hero)" }}
-        aria-hidden
-      />
+    <section
+      id="top"
+      className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28"
+    >
+      {/* Deep background layers */}
+      <div className="absolute inset-0 -z-20" aria-hidden>
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 80% 60% at 50% -10%, oklch(0.78 0.13 82 / 0.22), oklch(0.78 0.13 82 / 0.06) 45%, transparent 75%)",
+          }}
+        />
+        {/* Floating orbs for depth */}
+        <div
+          className="hero-orb hero-orb-1"
+          style={{
+            position: "absolute",
+            width: "500px",
+            height: "500px",
+            borderRadius: "50%",
+            background:
+              "radial-gradient(circle, oklch(0.78 0.13 82 / 0.12), transparent 70%)",
+            top: "-5%",
+            left: "-10%",
+            filter: "blur(80px)",
+            animation: "floatOrb1 18s ease-in-out infinite",
+          }}
+        />
+        <div
+          className="hero-orb hero-orb-2"
+          style={{
+            position: "absolute",
+            width: "400px",
+            height: "400px",
+            borderRadius: "50%",
+            background:
+              "radial-gradient(circle, oklch(0.55 0.08 80 / 0.10), transparent 70%)",
+            top: "20%",
+            right: "-8%",
+            filter: "blur(70px)",
+            animation: "floatOrb2 22s ease-in-out infinite",
+          }}
+        />
+        <div
+          className="hero-orb hero-orb-3"
+          style={{
+            position: "absolute",
+            width: "300px",
+            height: "300px",
+            borderRadius: "50%",
+            background:
+              "radial-gradient(circle, oklch(0.88 0.11 86 / 0.08), transparent 70%)",
+            bottom: "10%",
+            left: "30%",
+            filter: "blur(60px)",
+            animation: "floatOrb3 16s ease-in-out infinite",
+          }}
+        />
+      </div>
+
       <div className="absolute inset-0 -z-10 grid-pattern" aria-hidden />
 
-      <div className="mx-auto max-w-6xl px-6 text-center">
-        {/* Badge */}
-        <div
-          className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full glass px-4 py-1.5 text-xs text-muted-foreground animate-fade-up"
-        >
-          <img src={logoAsset.url} alt="" className="h-4 w-4 rounded-sm" />
-          Tecnologia, IA e Automação para acelerar o crescimento de empresas
+      <div className="mx-auto max-w-6xl px-6">
+        {/* Top badge */}
+        <div className="mx-auto mb-10 flex w-fit animate-fade-up items-center gap-2.5 rounded-full glass px-5 py-2 text-xs font-medium text-muted-foreground">
+          <img
+            src={logoAsset.url}
+            alt=""
+            className="h-4 w-4 rounded-sm"
+          />
+          <span className="text-foreground/80">
+            Tecnologia, IA e Automação para empresas que crescem
+          </span>
         </div>
 
-        {/* Headline */}
-        <h1
-          className="font-display text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl animate-fade-up"
-          style={{ animationDelay: "0.1s" }}
-        >
-          Transformamos empresas através da{" "}
-          <span className="text-gradient">tecnologia e da inteligência artificial</span>
+        {/* Headline — short, punchy, memorable */}
+        <h1 className="animate-fade-up text-center font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
+          Multiplique resultados{" "}
+          <span className="text-gradient">com inteligência artificial</span>
         </h1>
 
-        {/* Subheadline */}
-        <p
-          className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg md:text-xl animate-fade-up"
-          style={{ animationDelay: "0.2s" }}
+        {/* Subheadline — clear value prop */}
+        <p className="animate-fade-up mx-auto mt-5 max-w-xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl"
+          style={{ animationDelay: "0.1s" }}
         >
-          Criamos soluções inteligentes que automatizam processos, escalam
-          operações e aceleram o faturamento de negócios que decidiram crescer.
-
+          Automatizamos processos, desenvolvemos software sob medida e
+          implantamos IA para escalar operações e acelerar o faturamento
+          do seu negócio.
         </p>
 
-        {/* Benefits */}
+        {/* 3 Trust benefit cards */}
         <div
-          className="mx-auto mt-8 flex max-w-xl flex-wrap items-center justify-center gap-x-6 gap-y-3 animate-fade-up"
-          style={{ animationDelay: "0.3s" }}
+          className="animate-fade-up mx-auto mt-10 flex max-w-3xl flex-col items-stretch justify-center gap-4 sm:flex-row"
+          style={{ animationDelay: "0.2s" }}
         >
-          {benefits.map((benefit) => (
-            <span
-              key={benefit}
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground"
+          {trustBenefits.map((b) => (
+            <div
+              key={b.title}
+              className="group flex flex-1 items-start gap-3 rounded-2xl glass p-4 transition-all duration-300 hover:border-brand-orange/30 hover:shadow-[0_0_40px_-12px_oklch(0.78_0.13_82/0.25)]"
             >
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-brand-orange/15">
-                <Check className="h-3 w-3 text-brand-orange" strokeWidth={3} />
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-orange/10 transition-colors group-hover:bg-brand-orange/20">
+                <b.icon
+                  className="h-5 w-5 text-brand-orange"
+                  strokeWidth={1.8}
+                />
               </span>
-              {benefit}
-            </span>
+              <div className="text-left">
+                <p className="text-sm font-semibold text-foreground">
+                  {b.title}
+                </p>
+                <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">
+                  {b.desc}
+                </p>
+              </div>
+            </div>
           ))}
         </div>
 
-        {/* Service selector + CTA buttons */}
+        {/* Service selector + CTAs */}
         <div
-          className="mt-9 flex flex-col items-center justify-center gap-4 animate-fade-up"
-          style={{ animationDelay: "0.4s" }}
+          className="animate-fade-up mt-10 flex flex-col items-center justify-center gap-4"
+          style={{ animationDelay: "0.3s" }}
         >
           {/* Dropdown */}
           <div className="relative w-full max-w-xs">
@@ -251,7 +330,11 @@ export function Hero() {
               aria-haspopup="listbox"
               aria-expanded={open}
               aria-controls={open ? listboxId : undefined}
-              aria-activedescendant={open ? `${listboxId}-option-${highlightedIndex}` : undefined}
+              aria-activedescendant={
+                open
+                  ? `${listboxId}-option-${highlightedIndex}`
+                  : undefined
+              }
             >
               <span className="truncate">{displayLabel}</span>
               <ChevronDown
@@ -269,11 +352,15 @@ export function Hero() {
                 aria-orientation="vertical"
               >
                 {allOptions.map((option, index) => {
-                  const isSelected = selectedService === (option === "Geral" ? "default" : option);
+                  const isSelected =
+                    selectedService ===
+                    (option === "Geral" ? "default" : option);
                   return (
                     <li key={option} role="presentation">
                       <button
-                        ref={(el) => { optionRefs.current[index] = el; }}
+                        ref={(el) => {
+                          optionRefs.current[index] = el;
+                        }}
                         id={`${listboxId}-option-${index}`}
                         type="button"
                         role="option"
@@ -306,7 +393,7 @@ export function Hero() {
               className="group inline-flex items-center gap-2 rounded-full bg-sunset px-7 py-3.5 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Solicitar Orçamento
+              Falar com Especialista
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
 
@@ -320,44 +407,39 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Trust indicator */}
+        {/* Trust bar */}
         <div
-          className="mt-6 flex items-center justify-center gap-2 text-xs text-muted-foreground animate-fade-up"
+          className="animate-fade-up mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-muted-foreground"
+          style={{ animationDelay: "0.4s" }}
+        >
+          <span className="inline-flex items-center gap-1.5">
+            <Globe className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
+            Atendimento Brasil
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <Zap className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
+            Resposta em até 2h
+          </span>
+          <span className="inline-flex items-center gap-1.5">
+            <ShieldCheck className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
+            Dados protegidos
+          </span>
+        </div>
+
+        {/* Hero image with depth */}
+        <div
+          className="animate-fade-up relative mx-auto mt-14 max-w-5xl"
           style={{ animationDelay: "0.5s" }}
         >
-          <Globe className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
-          <span>Atendimento para empresas em todo o Brasil</span>
-        </div>
-
-        {/* Badges */}
-        <div
-          className="mt-6 flex flex-wrap items-center justify-center gap-2 animate-fade-up"
-          style={{ animationDelay: "0.55s" }}
-        >
-          {badges.map((b) => (
-            <span
-              key={b.label}
-              className="inline-flex items-center gap-1.5 rounded-full border border-border/60 bg-card/40 px-3 py-1 text-xs text-muted-foreground"
-            >
-              <b.icon className="h-3.5 w-3.5 text-brand-orange" />
-              {b.label}
-            </span>
-          ))}
-        </div>
-
-        {/* Hero image */}
-        <div
-          className="relative mx-auto mt-16 max-w-5xl animate-fade-up"
-          style={{ animationDelay: "0.6s" }}
-        >
-          <div className="absolute -inset-x-10 -top-10 bottom-0 -z-10 bg-sunset opacity-30 blur-3xl" />
+          <div className="absolute -inset-x-12 -top-12 bottom-4 -z-10 rounded-[2.5rem] bg-sunset opacity-25 blur-[100px]" />
           <div className="overflow-hidden rounded-2xl glass p-2 glow">
             <img
               src={heroImage}
-              alt="Mockups de sites e landing pages desenvolvidos pela Horizonte Fractal"
+              alt="Dashboard de automação e inteligência artificial desenvolvido pela Horizonte Fractal"
               width={1920}
               height={1080}
               className="w-full rounded-xl"
+              loading="eager"
             />
           </div>
         </div>
