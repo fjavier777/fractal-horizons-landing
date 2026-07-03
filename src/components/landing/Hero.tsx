@@ -22,18 +22,18 @@ const allOptions = ["Geral", ...servicesList];
 const trustBenefits = [
   {
     icon: Cpu,
-    title: "IA & Automação",
-    desc: "Reduza custos operacionais em até 70%",
+    title: "Menos esforço, mais resultado",
+    desc: "Sua equipe livre do operacional. Até 70% de horas recuperadas.",
   },
   {
     icon: Layers,
-    title: "Software Sob Medida",
-    desc: "Soluções construídas para o seu negócio",
+    title: "Feito para o seu negócio",
+    desc: "Nada de software genérico. Cada solução nasce do seu contexto.",
   },
   {
     icon: TrendingUp,
-    title: "Crescimento Acelerado",
-    desc: "Resultados mensuráveis em até 90 dias",
+    title: "Crescimento em 90 dias",
+    desc: "Impacto mensurável no faturamento. Rápido, previsível, real.",
   },
 ];
 
