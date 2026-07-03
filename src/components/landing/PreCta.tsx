@@ -2,8 +2,8 @@ import { CheckCircle2, Clock, MessageCircle, ArrowRight } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const benefits = [
-  "Diagnóstico estratégico gratuito",
-  "Resposta ágil e consultiva",
+  "Diagnóstico gratuito",
+  "Conversa sem enrolação",
   "Solução sob medida",
   "Parceria de longo prazo",
 ];
