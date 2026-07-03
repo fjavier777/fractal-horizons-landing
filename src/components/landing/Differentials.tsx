@@ -3,14 +3,14 @@ import {
 } from "lucide-react";
 
 const items = [
-  { icon: Target, label: "Foco em resultado de negócio" },
-  { icon: BrainCircuit, label: "IA aplicada com propósito" },
-  { icon: Gauge, label: "Performance de padrão enterprise" },
-  { icon: Layers, label: "Arquitetura escalável" },
-  { icon: TrendingUp, label: "Crescimento previsível" },
-  { icon: ShieldCheck, label: "Segurança e confiabilidade" },
-  { icon: Smartphone, label: "Experiência multi-dispositivo" },
-  { icon: Headset, label: "Parceria estratégica de longo prazo" },
+  { icon: Target, label: "Obcecados pelo seu resultado" },
+  { icon: BrainCircuit, label: "IA aplicada com propósito claro" },
+  { icon: Gauge, label: "Velocidade de startup, rigor de enterprise" },
+  { icon: Layers, label: "Cresce sem quebrar" },
+  { icon: TrendingUp, label: "Impacto que aparece no P&L" },
+  { icon: ShieldCheck, label: "Seus dados sempre protegidos" },
+  { icon: Smartphone, label: "Perfeito em qualquer tela" },
+  { icon: Headset, label: "Parceiro que fica ao seu lado" },
 ];
 
 export function Differentials() {
