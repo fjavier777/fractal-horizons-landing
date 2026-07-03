@@ -15,7 +15,7 @@ export function Footer() {
               </span>
             </div>
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-              Tecnologia, IA e automação para acelerar o crescimento de empresas ambiciosas.
+              A tecnologia que empresas ambiciosas usam para crescer mais rápido.
             </p>
 
             <div className="mt-5 flex gap-2">
