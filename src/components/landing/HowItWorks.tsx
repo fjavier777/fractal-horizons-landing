@@ -9,32 +9,32 @@ import {
 const steps = [
   {
     n: "01",
-    title: "Diagnóstico estratégico",
-    desc: "Mapeamos gargalos, oportunidades e onde a tecnologia gera mais valor no seu negócio.",
+    title: "Entendemos seu negócio a fundo",
+    desc: "Antes de qualquer código, mergulhamos na sua operação para achar onde a tecnologia gera mais dinheiro.",
     icon: ClipboardCheck,
   },
   {
     n: "02",
-    title: "Arquitetura da solução",
-    desc: "Desenhamos a solução ideal com IA, automações e integrações para o seu contexto.",
+    title: "Desenhamos o caminho certo",
+    desc: "Nada de tentativa e erro. Um plano claro, com IA e automação onde faz diferença de verdade.",
     icon: Map,
   },
   {
     n: "03",
-    title: "Engenharia e IA",
-    desc: "Construímos software, agentes e fluxos automatizados com padrão de mercado enterprise.",
+    title: "Construímos com excelência",
+    desc: "Engenharia sênior e IA de ponta. Tecnologia que sua concorrência ainda não descobriu.",
     icon: Code2,
   },
   {
     n: "04",
-    title: "Go-live e integração",
-    desc: "Colocamos em produção com segurança, observabilidade e integração aos seus sistemas.",
+    title: "Colocamos no ar sem susto",
+    desc: "Implantação cuidadosa, integrada aos seus sistemas. Você acorda com a solução funcionando.",
     icon: Rocket,
   },
   {
     n: "05",
-    title: "Escala contínua",
-    desc: "Evoluímos a solução com base em dados para escalar receita, produtividade e margem.",
+    title: "Evoluímos com seu crescimento",
+    desc: "Acompanhamos, ajustamos, escalamos. Sua tecnologia cresce no ritmo do seu faturamento.",
     icon: TrendingUp,
   },
 ];
