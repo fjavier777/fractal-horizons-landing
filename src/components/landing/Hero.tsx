@@ -266,23 +266,23 @@ export function Hero() {
             className="h-4 w-4 rounded-sm"
           />
           <span className="text-foreground/80">
-            Tecnologia, IA e Automação para empresas que crescem
+            O próximo salto da sua empresa começa aqui
           </span>
         </div>
 
         {/* Headline — short, punchy, memorable */}
         <h1 className="animate-fade-up text-center font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          Multiplique resultados{" "}
-          <span className="text-gradient">com inteligência artificial</span>
+          Sua empresa no{" "}
+          <span text-gradient="" className="text-gradient">próximo nível</span>
         </h1>
 
         {/* Subheadline — clear value prop */}
         <p className="animate-fade-up mx-auto mt-5 max-w-xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl"
           style={{ animationDelay: "0.1s" }}
         >
-          Automatizamos processos, desenvolvemos software sob medida e
-          implantamos IA para escalar operações e acelerar o faturamento
-          do seu negócio.
+          Enquanto seus concorrentes lutam com planilhas, você automatiza,
+          decide com IA e cresce mais rápido. É assim que a Horizonte Fractal
+          transforma negócios.
         </p>
 
         {/* 3 Trust benefit cards */}
