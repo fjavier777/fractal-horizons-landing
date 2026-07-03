@@ -19,13 +19,13 @@ export function PreCta() {
           <div className="absolute -top-20 left-1/2 -z-10 h-64 w-[120%] -translate-x-1/2 rounded-full bg-sunset opacity-25 blur-3xl" />
 
           <h2 className="font-display text-4xl font-semibold md:text-5xl">
-            Pronto para{" "}
-            <span className="text-gradient">acelerar o crescimento da sua empresa?</span>
+            E se, em 30 dias,{" "}
+            <span className="text-gradient">sua empresa fosse outra?</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Agende uma conversa estratégica e descubra como IA, automação e
-            software sob medida podem transformar seu resultado.
+            Uma conversa. Sem custo, sem compromisso. Só o mapa do que
+            IA e automação podem fazer pelo seu negócio.
           </p>
 
 
