@@ -39,13 +39,13 @@ export function Projects() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Cases
+            Casos reais
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Tecnologia em <span className="text-gradient">movimento</span>
+            Empresas que já vivem <span className="text-gradient">o próximo capítulo</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Projetos selecionados de IA, automação, software e presença digital que geraram impacto mensurável.
+            Cada projeto virou uma história de crescimento. A sua pode ser a próxima.
           </p>
         </div>
 
