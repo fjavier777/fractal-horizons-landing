@@ -273,7 +273,7 @@ export function Hero() {
         {/* Headline — short, punchy, memorable */}
         <h1 className="animate-fade-up text-center font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
           Sua empresa no{" "}
-          <span text-gradient="" className="text-gradient">próximo nível</span>
+          <span className="text-gradient">próximo nível</span>
         </h1>
 
         {/* Subheadline — clear value prop */}
