@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 120, prefix: "+", suffix: "", label: "Projetos de tecnologia entregues" },
-  { value: 70, prefix: "Até ", suffix: "%", label: "de horas operacionais economizadas com automação" },
-  { value: 3, prefix: "", suffix: "x", label: "de aumento médio em geração de oportunidades" },
-  { value: 98, prefix: "", suffix: "%", label: "de satisfação em clientes recorrentes" },
+  { value: 120, prefix: "+", suffix: "", label: "empresas transformadas por tecnologia" },
+  { value: 70, prefix: "Até ", suffix: "%", label: "de horas devolvidas ao seu time" },
+  { value: 3, prefix: "", suffix: "x", label: "mais oportunidades entrando no funil" },
+  { value: 98, prefix: "", suffix: "%", label: "de clientes que voltam a contratar" },
 ];
 
 
@@ -59,10 +59,10 @@ export function Results() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Impacto
+            Números reais
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Resultados que <span className="text-gradient">movem o negócio</span>
+            O que nossos clientes <span className="text-gradient">estão colhendo</span>
           </h2>
         </div>
 

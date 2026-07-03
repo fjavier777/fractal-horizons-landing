@@ -9,12 +9,12 @@ export function CtaFinal() {
           <div className="absolute inset-0 -z-10 bg-sunset opacity-20" />
           <div className="absolute -bottom-20 left-1/2 -z-10 h-64 w-[120%] -translate-x-1/2 rounded-full bg-sunset opacity-30 blur-3xl" />
           <h2 className="font-display text-4xl font-semibold md:text-5xl">
-            Vamos transformar sua empresa com<br />
-            <span className="text-gradient">tecnologia e inteligência</span>
+            O próximo passo da sua empresa<br />
+            <span className="text-gradient">começa com uma conversa</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
-            Agende uma conversa estratégica e descubra o caminho mais curto entre
-            a sua operação atual e o próximo patamar de crescimento.
+            Chega de adiar. Vamos entender seu momento e mostrar o caminho
+            mais curto até o próximo patamar.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a
@@ -24,7 +24,7 @@ export function CtaFinal() {
               className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Falar com um especialista
+              Começar agora pelo WhatsApp
             </a>
 
             <a

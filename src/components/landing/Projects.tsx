@@ -9,25 +9,25 @@ const projects = [
   {
     title: "Motor de Aquisição Digital",
     category: "Growth & IA",
-    desc: "Landing pages, tracking e automações de qualificação com IA para acelerar o pipeline comercial.",
+    desc: "Leads certos, no momento certo. IA qualifica, automação nutre, o vendedor só fecha.",
     image: landingImg,
   },
   {
     title: "ImpactFlow",
     category: "Plataforma SaaS",
-    desc: "Plataforma analítica com dashboards, integrações e camada de inteligência para decisões orientadas a dados.",
+    desc: "Decisões guiadas por dados, não por achismo. Dashboards que mostram onde agir agora.",
     image: impactflowImg,
   },
   {
     title: "Operação Digital para Logística",
     category: "Transformação Digital",
-    desc: "Modernização do fluxo operacional de uma transportadora com automação e integração de sistemas.",
+    desc: "Uma transportadora saiu do papel e da planilha. Hoje a operação roda no piloto automático.",
     image: transportImg,
   },
   {
     title: "Presença Corporativa Premium",
     category: "Autoridade Digital",
-    desc: "Portal institucional posicionando a empresa como referência técnica e comercial no seu mercado.",
+    desc: "Um portal que fala com CEO. Autoridade no ar, oportunidades chegando sozinhas.",
     image: corporateImg,
   },
 ];
@@ -39,13 +39,13 @@ export function Projects() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Cases
+            Casos reais
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Tecnologia em <span className="text-gradient">movimento</span>
+            Empresas que já vivem <span className="text-gradient">o próximo capítulo</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Projetos selecionados de IA, automação, software e presença digital que geraram impacto mensurável.
+            Cada projeto virou uma história de crescimento. A sua pode ser a próxima.
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export function Projects() {
                     className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background/40 px-4 py-2 text-xs font-semibold transition-all hover:border-brand-orange/60 hover:bg-sunset hover:text-primary-foreground"
                   >
                     <Eye className="h-3.5 w-3.5" />
-                    Falar com um especialista
+                    Quero um assim
 
                   </a>
                 </div>

@@ -22,18 +22,18 @@ const allOptions = ["Geral", ...servicesList];
 const trustBenefits = [
   {
     icon: Cpu,
-    title: "IA & Automação",
-    desc: "Reduza custos operacionais em até 70%",
+    title: "Menos esforço, mais resultado",
+    desc: "Sua equipe livre do operacional. Até 70% de horas recuperadas.",
   },
   {
     icon: Layers,
-    title: "Software Sob Medida",
-    desc: "Soluções construídas para o seu negócio",
+    title: "Feito para o seu negócio",
+    desc: "Nada de software genérico. Cada solução nasce do seu contexto.",
   },
   {
     icon: TrendingUp,
-    title: "Crescimento Acelerado",
-    desc: "Resultados mensuráveis em até 90 dias",
+    title: "Crescimento em 90 dias",
+    desc: "Impacto mensurável no faturamento. Rápido, previsível, real.",
   },
 ];
 
@@ -266,23 +266,23 @@ export function Hero() {
             className="h-4 w-4 rounded-sm"
           />
           <span className="text-foreground/80">
-            Tecnologia, IA e Automação para empresas que crescem
+            O próximo salto da sua empresa começa aqui
           </span>
         </div>
 
         {/* Headline — short, punchy, memorable */}
         <h1 className="animate-fade-up text-center font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl">
-          Multiplique resultados{" "}
-          <span className="text-gradient">com inteligência artificial</span>
+          Sua empresa no{" "}
+          <span className="text-gradient">próximo nível</span>
         </h1>
 
         {/* Subheadline — clear value prop */}
         <p className="animate-fade-up mx-auto mt-5 max-w-xl text-center text-base leading-relaxed text-muted-foreground sm:text-lg md:text-xl"
           style={{ animationDelay: "0.1s" }}
         >
-          Automatizamos processos, desenvolvemos software sob medida e
-          implantamos IA para escalar operações e acelerar o faturamento
-          do seu negócio.
+          Enquanto seus concorrentes lutam com planilhas, você automatiza,
+          decide com IA e cresce mais rápido. É assim que a Horizonte Fractal
+          transforma negócios.
         </p>
 
         {/* 3 Trust benefit cards */}
@@ -393,7 +393,7 @@ export function Hero() {
               className="group inline-flex items-center gap-2 rounded-full bg-sunset px-7 py-3.5 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Falar com Especialista
+              Quero crescer com IA
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
 
@@ -401,7 +401,7 @@ export function Hero() {
               href="#portfolio"
               className="group inline-flex items-center gap-2 rounded-full glass px-7 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
             >
-              Ver Portfólio
+              Ver o que já entregamos
               <ExternalLink className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
@@ -414,15 +414,15 @@ export function Hero() {
         >
           <span className="inline-flex items-center gap-1.5">
             <Globe className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
-            Atendimento Brasil
+            Feito no Brasil
           </span>
           <span className="inline-flex items-center gap-1.5">
             <Zap className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
-            Resposta em até 2h
+            Falamos com você em 2h
           </span>
           <span className="inline-flex items-center gap-1.5">
             <ShieldCheck className="h-3.5 w-3.5 text-brand-orange" aria-hidden />
-            Dados protegidos
+            Seus dados sempre seguros
           </span>
         </div>
 

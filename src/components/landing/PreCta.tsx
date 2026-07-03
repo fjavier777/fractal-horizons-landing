@@ -2,8 +2,8 @@ import { CheckCircle2, Clock, MessageCircle, ArrowRight } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const benefits = [
-  "Diagnóstico estratégico gratuito",
-  "Resposta ágil e consultiva",
+  "Diagnóstico gratuito",
+  "Conversa sem enrolação",
   "Solução sob medida",
   "Parceria de longo prazo",
 ];
@@ -19,13 +19,13 @@ export function PreCta() {
           <div className="absolute -top-20 left-1/2 -z-10 h-64 w-[120%] -translate-x-1/2 rounded-full bg-sunset opacity-25 blur-3xl" />
 
           <h2 className="font-display text-4xl font-semibold md:text-5xl">
-            Pronto para{" "}
-            <span className="text-gradient">acelerar o crescimento da sua empresa?</span>
+            E se, em 30 dias,{" "}
+            <span className="text-gradient">sua empresa fosse outra?</span>
           </h2>
 
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Agende uma conversa estratégica e descubra como IA, automação e
-            software sob medida podem transformar seu resultado.
+            Uma conversa. Sem custo, sem compromisso. Só o mapa do que
+            IA e automação podem fazer pelo seu negócio.
           </p>
 
 
@@ -46,8 +46,8 @@ export function PreCta() {
               <span className="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-brand-gold ring-2 ring-background" />
             </div>
             <div className="text-left">
-              <p className="text-sm font-semibold text-foreground">Resposta em até 24 horas</p>
-              <p className="text-xs text-muted-foreground">Conversa estratégica sem compromisso</p>
+              <p className="text-sm font-semibold text-foreground">Retorno em até 24 horas</p>
+              <p className="text-xs text-muted-foreground">A gente escuta antes de propor</p>
             </div>
 
           </div>
@@ -61,7 +61,7 @@ export function PreCta() {
               className="group inline-flex items-center gap-2 rounded-full bg-sunset px-7 py-3.5 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Falar com um especialista
+              Quero minha conversa
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
 
             </a>

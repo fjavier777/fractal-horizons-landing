@@ -13,33 +13,33 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 const services = [
   {
     icon: BrainCircuit,
-    title: "Inteligência Artificial Aplicada",
-    desc: "Agentes, copilots e modelos preditivos que aumentam produtividade e criam vantagem competitiva real.",
+    title: "IA que trabalha por você",
+    desc: "Agentes inteligentes atendem clientes, qualificam leads e tomam decisões. Sua equipe foca no que importa.",
   },
   {
     icon: Workflow,
-    title: "Automação de Processos",
-    desc: "Eliminamos tarefas repetitivas e conectamos sistemas para reduzir custo operacional e escalar sua operação.",
+    title: "Fim do trabalho manual",
+    desc: "Processos que sugavam horas agora rodam sozinhos. Menos erro, menos custo, mais velocidade.",
   },
   {
     icon: Code2,
-    title: "Desenvolvimento de Software Sob Medida",
-    desc: "Plataformas, dashboards e sistemas internos construídos para resolver o seu problema — não um problema genérico.",
+    title: "Software feito pra sua realidade",
+    desc: "Nada de adaptar o negócio ao sistema. Criamos a ferramenta que sua operação sempre precisou.",
   },
   {
     icon: Layers,
-    title: "Transformação Digital",
-    desc: "Diagnóstico estratégico e roadmap para modernizar sua empresa com tecnologia, dados e novos modelos de negócio.",
+    title: "Transformação digital de verdade",
+    desc: "Um plano claro para modernizar sua empresa. Tecnologia com propósito, resultado no P&L.",
   },
   {
     icon: Rocket,
-    title: "Presença Digital de Alta Performance",
-    desc: "Sites, landing pages e produtos web construídos para posicionar autoridade e converter oportunidades qualificadas.",
+    title: "Presença que gera cliente",
+    desc: "Sites e páginas que posicionam sua marca como referência e convertem visita em oportunidade real.",
   },
   {
     icon: LineChart,
-    title: "Aceleração de Crescimento",
-    desc: "SEO, mídia paga e analytics unificados em uma máquina previsível de aquisição de clientes.",
+    title: "Máquina de aquisição previsível",
+    desc: "SEO, mídia paga e dados unidos. Todo mês, novos clientes chegando de forma consistente.",
   },
 ];
 
@@ -49,15 +49,15 @@ export function Services() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            O que fazemos
+            Nossas soluções
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Soluções inteligentes para{" "}
-            <span className="text-gradient">acelerar o seu crescimento</span>
+            Tudo que sua empresa precisa{" "}
+            <span className="text-gradient">para crescer sem travar</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Unimos IA, automação, engenharia de software e estratégia digital em
-            um único parceiro focado no resultado do seu negócio.
+            Um único parceiro. Seis frentes de impacto. Zero dor de cabeça
+            entre fornecedores.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export function Services() {
                     className="inline-flex items-center gap-1.5 rounded-full bg-sunset px-3.5 py-2 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                   >
                     <MessageCircle className="h-3.5 w-3.5" />
-                    Conversar com um especialista
+                    Quero essa solução
                     <ArrowRight className="h-3 w-3" />
                   </a>
                 </div>

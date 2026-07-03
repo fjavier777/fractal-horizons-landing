@@ -3,14 +3,14 @@ import {
 } from "lucide-react";
 
 const items = [
-  { icon: Target, label: "Foco em resultado de negócio" },
-  { icon: BrainCircuit, label: "IA aplicada com propósito" },
-  { icon: Gauge, label: "Performance de padrão enterprise" },
-  { icon: Layers, label: "Arquitetura escalável" },
-  { icon: TrendingUp, label: "Crescimento previsível" },
-  { icon: ShieldCheck, label: "Segurança e confiabilidade" },
-  { icon: Smartphone, label: "Experiência multi-dispositivo" },
-  { icon: Headset, label: "Parceria estratégica de longo prazo" },
+  { icon: Target, label: "Obcecados pelo seu resultado" },
+  { icon: BrainCircuit, label: "IA aplicada com propósito claro" },
+  { icon: Gauge, label: "Velocidade de startup, rigor de enterprise" },
+  { icon: Layers, label: "Cresce sem quebrar" },
+  { icon: TrendingUp, label: "Impacto que aparece no P&L" },
+  { icon: ShieldCheck, label: "Seus dados sempre protegidos" },
+  { icon: Smartphone, label: "Perfeito em qualquer tela" },
+  { icon: Headset, label: "Parceiro que fica ao seu lado" },
 ];
 
 export function Differentials() {
@@ -19,14 +19,14 @@ export function Differentials() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Autoridade
+            Por que nós
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Por que empresas escolhem a <span className="text-gradient">Horizonte Fractal</span>
+            Por que líderes escolhem a <span className="text-gradient">Horizonte Fractal</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Combinamos visão estratégica, engenharia sólida e inteligência
-            artificial para gerar impacto real onde importa: no seu resultado.
+            Não somos mais uma agência. Somos o time de tecnologia que faltava
+            para sua empresa dar o próximo salto.
           </p>
         </div>
 

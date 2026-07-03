@@ -5,14 +5,14 @@ const plans = [
   {
     name: "Essencial",
     price: "149",
-    tagline: "Sustente sua operação digital com estabilidade.",
+    tagline: "Sua operação no ar. Sem dor de cabeça.",
     features: ["Hospedagem e infraestrutura", "Backups automáticos", "Monitoramento contínuo"],
     highlight: false,
   },
   {
     name: "Crescimento",
     price: "299",
-    tagline: "Evolua sua tecnologia com foco em performance.",
+    tagline: "Sua tecnologia ficando mais rápida a cada mês.",
     features: [
       "Infraestrutura otimizada",
       "Automações e melhorias contínuas",
@@ -23,7 +23,7 @@ const plans = [
   {
     name: "Performance",
     price: "599",
-    tagline: "Escale com dados, IA e evolução constante.",
+    tagline: "Um time inteiro cuidando do seu crescimento.",
     features: [
       "Otimização estratégica contínua",
       "Automações e integrações avançadas",
@@ -40,14 +40,14 @@ export function SupportPlans() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Evolução Contínua
+            Parceria contínua
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Planos para <span className="text-gradient">escalar com inteligência</span>
+            Um time cuidando <span className="text-gradient">enquanto você foca no negócio</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Parceria contínua para manter sua tecnologia performando e evoluindo
-            no ritmo do seu crescimento.
+            Sua tecnologia rodando redonda, evoluindo todo mês. Você só
+            precisa se preocupar em crescer.
           </p>
         </div>
 
