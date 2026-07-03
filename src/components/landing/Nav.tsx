@@ -3,9 +3,9 @@ import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const links = [
   { label: "Soluções", href: "#servicos" },
-  { label: "Metodologia", href: "#processo" },
-  { label: "Autoridade", href: "#diferenciais" },
-  { label: "Impacto", href: "#resultados" },
+  { label: "Como fazemos", href: "#processo" },
+  { label: "Por que nós", href: "#diferenciais" },
+  { label: "Resultados", href: "#resultados" },
   { label: "Contato", href: "#contato" },
 ];
 
