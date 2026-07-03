@@ -19,14 +19,14 @@ export function Differentials() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Autoridade
+            Por que nós
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Por que empresas escolhem a <span className="text-gradient">Horizonte Fractal</span>
+            Por que líderes escolhem a <span className="text-gradient">Horizonte Fractal</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Combinamos visão estratégica, engenharia sólida e inteligência
-            artificial para gerar impacto real onde importa: no seu resultado.
+            Não somos mais uma agência. Somos o time de tecnologia que faltava
+            para sua empresa dar o próximo salto.
           </p>
         </div>
 
