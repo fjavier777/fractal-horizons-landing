@@ -45,11 +45,11 @@ export function HowItWorks() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-xs font-medium uppercase tracking-[0.2em] text-brand-orange">
-            Como Trabalhamos
+            Como trabalhamos
           </span>
           <h2 className="mt-3 font-display text-4xl font-semibold md:text-5xl">
-            Da estratégia à{" "}
-            <span className="text-gradient">escala inteligente</span>
+            Da primeira conversa ao{" "}
+            <span className="text-gradient">primeiro resultado</span>
           </h2>
         </div>
 
