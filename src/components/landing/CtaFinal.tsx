@@ -24,7 +24,7 @@ export function CtaFinal() {
               className="group inline-flex items-center gap-2 rounded-full bg-sunset px-6 py-3 text-sm font-semibold text-primary-foreground glow transition-transform hover:-translate-y-0.5"
             >
               <MessageCircle className="h-4 w-4" />
-              Falar com um especialista
+              Começar agora pelo WhatsApp
             </a>
 
             <a
