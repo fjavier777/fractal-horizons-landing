@@ -1,9 +1,9 @@
 const steps = [
-  { n: "01", title: "Discovery", desc: "Mergulhamos no seu negócio, dados e objetivos para identificar onde a tecnologia gera mais impacto." },
-  { n: "02", title: "Estratégia & Arquitetura", desc: "Definimos o roadmap, a stack e a arquitetura de IA, automação e software mais adequada." },
-  { n: "03", title: "Engenharia", desc: "Construímos com práticas modernas: cloud, observabilidade, segurança e IA de ponta." },
-  { n: "04", title: "Go-live", desc: "Implantamos com testes rigorosos, integrações e monitoramento contínuo do primeiro dia." },
-  { n: "05", title: "Escala & Evolução", desc: "Acompanhamos métricas de negócio e evoluímos a solução para maximizar ROI." },
+  { n: "01", title: "Descoberta", desc: "Ouvimos, perguntamos, entendemos. Descobrimos onde está o ouro escondido do seu negócio." },
+  { n: "02", title: "Estratégia", desc: "Um plano sob medida. Sem promessa vazia, só o caminho mais curto até o resultado." },
+  { n: "03", title: "Construção", desc: "Nossa engenharia coloca a mão na massa. Tecnologia de ponta, sem gambiarra." },
+  { n: "04", title: "Lançamento", desc: "Tudo testado, integrado e monitorado. Você vê funcionando desde o primeiro dia." },
+  { n: "05", title: "Crescimento", desc: "Medimos, aprendemos, evoluímos. Cada mês, mais impacto no seu faturamento." },
 ];
 
 export function Process() {
