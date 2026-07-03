@@ -5,14 +5,14 @@ const plans = [
   {
     name: "Essencial",
     price: "149",
-    tagline: "Sustente sua operação digital com estabilidade.",
+    tagline: "Sua operação no ar. Sem dor de cabeça.",
     features: ["Hospedagem e infraestrutura", "Backups automáticos", "Monitoramento contínuo"],
     highlight: false,
   },
   {
     name: "Crescimento",
     price: "299",
-    tagline: "Evolua sua tecnologia com foco em performance.",
+    tagline: "Sua tecnologia ficando mais rápida a cada mês.",
     features: [
       "Infraestrutura otimizada",
       "Automações e melhorias contínuas",
@@ -23,7 +23,7 @@ const plans = [
   {
     name: "Performance",
     price: "599",
-    tagline: "Escale com dados, IA e evolução constante.",
+    tagline: "Um time inteiro cuidando do seu crescimento.",
     features: [
       "Otimização estratégica contínua",
       "Automações e integrações avançadas",
