@@ -3,19 +3,19 @@ import { Star } from "lucide-react";
 const items = [
   {
     quote:
-      "Automatizamos processos críticos e ganhamos tempo estratégico para crescer. A Horizonte Fractal entrega tecnologia com visão de negócio.",
+      "Nosso time vivia apagando incêndio. Hoje a automação faz o trabalho pesado e a gente cresce sem contratar mais gente.",
     name: "Marina Almeida",
     role: "CEO, Vento Sul Logística",
   },
   {
     quote:
-      "A solução de IA que construíram gerou um salto real em produtividade comercial. Investimento que se pagou em poucos meses.",
+      "A IA deles turbinou nosso comercial. O investimento se pagou em três meses. Não voltaria atrás por nada.",
     name: "Rafael Monteiro",
     role: "Diretor Comercial, Nexa Saúde",
   },
   {
     quote:
-      "Mais do que tecnologia, encontramos um parceiro estratégico. A transformação digital deixou de ser promessa e virou resultado.",
+      "Encontramos gente que fala de negócio, não só de tecnologia. Isso muda tudo. Virou parceria de verdade.",
     name: "Camila Duarte",
     role: "Sócia, Atlas Consultoria",
   },
