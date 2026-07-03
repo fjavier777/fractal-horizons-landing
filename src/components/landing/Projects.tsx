@@ -9,25 +9,25 @@ const projects = [
   {
     title: "Motor de Aquisição Digital",
     category: "Growth & IA",
-    desc: "Landing pages, tracking e automações de qualificação com IA para acelerar o pipeline comercial.",
+    desc: "Leads certos, no momento certo. IA qualifica, automação nutre, o vendedor só fecha.",
     image: landingImg,
   },
   {
     title: "ImpactFlow",
     category: "Plataforma SaaS",
-    desc: "Plataforma analítica com dashboards, integrações e camada de inteligência para decisões orientadas a dados.",
+    desc: "Decisões guiadas por dados, não por achismo. Dashboards que mostram onde agir agora.",
     image: impactflowImg,
   },
   {
     title: "Operação Digital para Logística",
     category: "Transformação Digital",
-    desc: "Modernização do fluxo operacional de uma transportadora com automação e integração de sistemas.",
+    desc: "Uma transportadora saiu do papel e da planilha. Hoje a operação roda no piloto automático.",
     image: transportImg,
   },
   {
     title: "Presença Corporativa Premium",
     category: "Autoridade Digital",
-    desc: "Portal institucional posicionando a empresa como referência técnica e comercial no seu mercado.",
+    desc: "Um portal que fala com CEO. Autoridade no ar, oportunidades chegando sozinhas.",
     image: corporateImg,
   },
 ];
