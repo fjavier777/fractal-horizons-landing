@@ -46,8 +46,8 @@ export function PreCta() {
               <span className="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 rounded-full bg-brand-gold ring-2 ring-background" />
             </div>
             <div className="text-left">
-              <p className="text-sm font-semibold text-foreground">Resposta em até 24 horas</p>
-              <p className="text-xs text-muted-foreground">Conversa estratégica sem compromisso</p>
+              <p className="text-sm font-semibold text-foreground">Retorno em até 24 horas</p>
+              <p className="text-xs text-muted-foreground">A gente escuta antes de propor</p>
             </div>
 
           </div>
