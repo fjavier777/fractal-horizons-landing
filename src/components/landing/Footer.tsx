@@ -57,7 +57,7 @@ export function Footer() {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-border/60 pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} Horizonte Fractal. Todos os direitos reservados.</p>
-          <p>IA, automação, software sob medida e transformação digital para empresas em crescimento.</p>
+          <p>Feito para quem quer crescer com IA, automação e tecnologia sob medida.</p>
 
         </div>
       </div>
