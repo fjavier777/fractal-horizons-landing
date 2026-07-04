@@ -7,6 +7,7 @@ import { Differentials } from "@/components/landing/Differentials";
 import { Process } from "@/components/landing/Process";
 import { Results } from "@/components/landing/Results";
 import { Tech } from "@/components/landing/Tech";
+import { Tecnologias } from "@/components/landing/Tecnologias";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Projects } from "@/components/landing/Projects";
 import { PreCta } from "@/components/landing/PreCta";
