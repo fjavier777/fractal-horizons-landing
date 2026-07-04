@@ -103,6 +103,7 @@ function Index() {
       <Nav />
       <Hero />
       <Tech />
+      <Tecnologias />
       <Services />
       <ComoTrabalhamos />
       <Differentials />
