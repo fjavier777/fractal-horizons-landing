@@ -83,7 +83,7 @@ export function Services() {
                     className="inline-flex items-center gap-1.5 rounded-full bg-sunset px-3.5 py-2 text-xs font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                   >
                     <MessageCircle className="h-3.5 w-3.5" />
-                    Quero essa solução
+                    Descobrir oportunidades
                     <ArrowRight className="h-3 w-3" />
                   </a>
                 </div>
