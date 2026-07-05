@@ -1,6 +1,7 @@
 import {
-  BrainCircuit, Gauge, ShieldCheck, Smartphone, Target, Headset, TrendingUp, Layers,
+  Sparkles, Rocket, Shield, Users, Target, Zap, Award, Clock,
 } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 const items = [
   { icon: Target, label: "Obcecados pelo seu resultado" },
