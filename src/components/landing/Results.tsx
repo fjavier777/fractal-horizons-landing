@@ -72,6 +72,8 @@ export function Results() {
             <StatCard key={s.label} s={s} />
           ))}
         </div>
+
+        <SectionCta label="Quero esses resultados" context="Resultados" hint="Números como esses também podem ser seus." />
       </div>
     </section>
   );
