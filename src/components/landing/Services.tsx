@@ -91,6 +91,8 @@ export function Services() {
             </article>
           ))}
         </div>
+
+        <SectionCta label="Quero acelerar meu negócio" hint="Não sabe por onde começar? A gente mostra o caminho." />
       </div>
     </section>
   );
