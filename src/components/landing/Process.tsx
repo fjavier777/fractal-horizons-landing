@@ -33,6 +33,8 @@ export function Process() {
             </li>
           ))}
         </ol>
+
+        <SectionCta label="Iniciar meu projeto" context="Processo" />
       </div>
     </section>
   );
