@@ -54,6 +54,8 @@ export function Testimonials() {
             </figure>
           ))}
         </div>
+
+        <SectionCta label="Quero ser o próximo caso" context="Depoimentos" />
       </div>
     </section>
   );
