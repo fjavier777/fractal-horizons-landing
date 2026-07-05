@@ -114,7 +114,7 @@ export function SupportPlans() {
                   }`}
                 >
                   <MessageCircle className="h-4 w-4" />
-                  Falar sobre este plano
+                  Quero este plano
                 </a>
               </div>
             </article>
