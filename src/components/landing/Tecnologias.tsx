@@ -174,6 +174,8 @@ export function Tecnologias() {
             );
           })}
         </div>
+
+        <SectionCta label="Automatizar minha empresa" context="Tecnologias" hint="Usamos o stack certo para o problema certo." />
       </div>
     </section>
   );
