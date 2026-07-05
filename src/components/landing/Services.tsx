@@ -9,6 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { SectionCta } from "./SectionCta";
 
 const services = [
   {
