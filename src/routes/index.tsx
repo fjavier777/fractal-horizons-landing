@@ -111,6 +111,7 @@ function Index() {
       <Process />
       <Results />
       <Projects />
+      <ProvaSocial />
       <Testimonials />
       <SupportPlans />
       <PreCta />
