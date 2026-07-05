@@ -1,5 +1,5 @@
 import {
-  Sparkles, Rocket, Shield, Users, Target, Zap, Award, Clock,
+  BrainCircuit, Gauge, Layers, TrendingUp, ShieldCheck, Smartphone, Headset, Target,
 } from "lucide-react";
 import { SectionCta } from "./SectionCta";
 
