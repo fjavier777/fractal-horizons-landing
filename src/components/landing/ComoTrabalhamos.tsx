@@ -87,6 +87,8 @@ export function ComoTrabalhamos() {
             })}
           </ol>
         </div>
+
+        <SectionCta label="Solicitar diagnóstico gratuito" context="Como Trabalhamos" />
       </div>
     </section>
   );
