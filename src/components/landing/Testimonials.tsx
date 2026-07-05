@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 const items = [
   {
