@@ -1,4 +1,5 @@
 import { Brain, Cloud, Layout, Server, Workflow, Database, Plug, Container, Check } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 interface TechItem {
   name: string;
@@ -173,6 +174,8 @@ export function Tecnologias() {
             );
           })}
         </div>
+
+        <SectionCta label="Automatizar minha empresa" context="Tecnologias" hint="Usamos o stack certo para o problema certo." />
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import {
-  BrainCircuit, Gauge, ShieldCheck, Smartphone, Target, Headset, TrendingUp, Layers,
+  BrainCircuit, Gauge, Layers, TrendingUp, ShieldCheck, Smartphone, Headset, Target,
 } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 const items = [
   { icon: Target, label: "Obcecados pelo seu resultado" },
@@ -43,6 +44,8 @@ export function Differentials() {
             </div>
           ))}
         </div>
+
+        <SectionCta label="Descobrir oportunidades" context="Diferenciais" />
       </div>
     </section>
   );

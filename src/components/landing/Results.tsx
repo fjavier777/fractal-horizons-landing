@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { SectionCta } from "./SectionCta";
 
 const stats = [
   { value: 120, prefix: "+", suffix: "", label: "empresas transformadas por tecnologia" },
@@ -71,6 +72,8 @@ export function Results() {
             <StatCard key={s.label} s={s} />
           ))}
         </div>
+
+        <SectionCta label="Quero esses resultados" context="Resultados" hint="Números como esses também podem ser seus." />
       </div>
     </section>
   );

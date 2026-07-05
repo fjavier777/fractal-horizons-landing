@@ -1,3 +1,5 @@
+import { SectionCta } from "./SectionCta";
+
 const steps = [
   { n: "01", title: "Descoberta", desc: "Ouvimos, perguntamos, entendemos. Descobrimos onde está o ouro escondido do seu negócio." },
   { n: "02", title: "Estratégia", desc: "Um plano sob medida. Sem promessa vazia, só o caminho mais curto até o resultado." },
@@ -31,6 +33,8 @@ export function Process() {
             </li>
           ))}
         </ol>
+
+        <SectionCta label="Iniciar meu projeto" context="Processo" />
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 const items = [
   {
@@ -53,6 +54,8 @@ export function Testimonials() {
             </figure>
           ))}
         </div>
+
+        <SectionCta label="Quero ser o próximo caso" context="Depoimentos" />
       </div>
     </section>
   );

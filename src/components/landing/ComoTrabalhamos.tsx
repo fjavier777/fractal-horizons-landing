@@ -1,4 +1,5 @@
 import { Search, Map, Code2, Rocket, RefreshCw } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 const steps = [
   {
@@ -86,6 +87,8 @@ export function ComoTrabalhamos() {
             })}
           </ol>
         </div>
+
+        <SectionCta label="Solicitar diagnóstico gratuito" context="Como Trabalhamos" />
       </div>
     </section>
   );
