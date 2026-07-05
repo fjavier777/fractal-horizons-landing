@@ -1,4 +1,5 @@
 import { Brain, Cloud, Layout, Server, Workflow, Database, Plug, Container, Check } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 interface TechItem {
   name: string;
