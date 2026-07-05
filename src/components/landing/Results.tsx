@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { SectionCta } from "./SectionCta";
 
 const stats = [
   { value: 120, prefix: "+", suffix: "", label: "empresas transformadas por tecnologia" },
