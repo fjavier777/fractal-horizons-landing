@@ -1,4 +1,5 @@
 import { Search, Map, Code2, Rocket, RefreshCw } from "lucide-react";
+import { SectionCta } from "./SectionCta";
 
 const steps = [
   {
