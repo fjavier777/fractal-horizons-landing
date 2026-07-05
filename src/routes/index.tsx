@@ -9,6 +9,7 @@ import { Results } from "@/components/landing/Results";
 import { Tech } from "@/components/landing/Tech";
 import { Tecnologias } from "@/components/landing/Tecnologias";
 import { Testimonials } from "@/components/landing/Testimonials";
+import { ProvaSocial } from "@/components/landing/ProvaSocial";
 import { Projects } from "@/components/landing/Projects";
 import { PreCta } from "@/components/landing/PreCta";
 import { SupportPlans } from "@/components/landing/SupportPlans";
