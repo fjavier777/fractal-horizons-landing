@@ -44,6 +44,8 @@ export function Differentials() {
             </div>
           ))}
         </div>
+
+        <SectionCta label="Descobrir oportunidades" context="Diferenciais" />
       </div>
     </section>
   );
