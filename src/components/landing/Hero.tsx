@@ -263,6 +263,11 @@ export function Hero() {
           <img
             src={logoAsset.url}
             alt=""
+            aria-hidden="true"
+            width={16}
+            height={16}
+            loading="eager"
+            decoding="async"
             className="h-4 w-4 rounded-sm"
           />
           <span className="text-foreground/80">
