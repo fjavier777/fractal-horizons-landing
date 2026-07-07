@@ -440,6 +440,9 @@ export function Hero() {
               height={1080}
               className="w-full rounded-xl"
               loading="eager"
+              decoding="async"
+              // @ts-expect-error fetchpriority is a valid HTML attribute
+              fetchpriority="high"
             />
           </div>
         </div>
