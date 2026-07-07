@@ -53,6 +53,11 @@ export function Footer() {
               <img
                 src={logoAsset.url}
                 alt=""
+                aria-hidden="true"
+                width={40}
+                height={40}
+                loading="lazy"
+                decoding="async"
                 className="h-9 w-9 rounded-md md:h-10 md:w-10"
               />
               <span className="font-display text-base font-semibold">

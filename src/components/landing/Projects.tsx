@@ -60,8 +60,9 @@ export function Projects() {
               <div className="relative aspect-[16/10] overflow-hidden">
                 <img
                   src={p.image}
-                  alt={p.title}
+                  alt={`Case ${p.title} — ${p.category}`}
                   loading="lazy"
+                  decoding="async"
                   width={1024}
                   height={640}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

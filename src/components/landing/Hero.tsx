@@ -263,6 +263,11 @@ export function Hero() {
           <img
             src={logoAsset.url}
             alt=""
+            aria-hidden="true"
+            width={16}
+            height={16}
+            loading="eager"
+            decoding="async"
             className="h-4 w-4 rounded-sm"
           />
           <span className="text-foreground/80">
@@ -440,6 +445,9 @@ export function Hero() {
               height={1080}
               className="w-full rounded-xl"
               loading="eager"
+              decoding="async"
+              // @ts-expect-error fetchpriority is a valid HTML attribute
+              fetchpriority="high"
             />
           </div>
         </div>
