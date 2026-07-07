@@ -57,12 +57,6 @@ export const Route = createFileRoute("/")({
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap",
         },
-        {
-          rel: "preload",
-          as: "image",
-          href: image,
-          fetchpriority: "high",
-        } as unknown as { rel: string; href: string },
       ],
       scripts: [
         {
