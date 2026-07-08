@@ -130,9 +130,11 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden">
-      <Nav />
-      <Hero />
+    <>
+      <a href="#conteudo" className="skip-link">Pular para o conteúdo</a>
+      <main id="conteudo" className="relative min-h-dvh overflow-x-hidden">
+        <Nav />
+        <Hero />
       <Tech />
       <Tecnologias />
       <Services />
@@ -146,8 +148,9 @@ function Index() {
       <SupportPlans />
       <PreCta />
       <CtaFinal />
-      <Footer />
-      <WhatsAppFloat />
-    </main>
+        <Footer />
+        <WhatsAppFloat />
+      </main>
+    </>
   );
 }

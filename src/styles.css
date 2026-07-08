@@ -127,6 +127,41 @@
     scroll-behavior: smooth;
   }
 
+  /* Anchor targets clear the fixed navbar */
+  section[id] {
+    scroll-margin-top: 96px;
+  }
+
+  /* Consistent focus-visible ring across landing interactive elements */
+  main a:focus-visible,
+  main button:focus-visible,
+  footer a:focus-visible,
+  footer button:focus-visible,
+  header a:focus-visible,
+  header button:focus-visible {
+    outline: 2px solid oklch(0.88 0.11 86 / 0.9);
+    outline-offset: 2px;
+    border-radius: 12px;
+  }
+
+  /* Accessible skip-to-content link */
+  .skip-link {
+    position: fixed;
+    top: -100px;
+    left: 1rem;
+    z-index: 100;
+    padding: 0.5rem 0.9rem;
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transition: top 0.25s ease;
+  }
+  .skip-link:focus {
+    top: 1rem;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
