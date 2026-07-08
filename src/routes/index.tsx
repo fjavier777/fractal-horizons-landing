@@ -148,8 +148,9 @@ function Index() {
       <SupportPlans />
       <PreCta />
       <CtaFinal />
-      <Footer />
-      <WhatsAppFloat />
-    </main>
+        <Footer />
+        <WhatsAppFloat />
+      </main>
+    </>
   );
 }
