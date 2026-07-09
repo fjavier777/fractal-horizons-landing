@@ -1,7 +1,7 @@
 import { ArrowUpRight, Eye } from "lucide-react";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import landingImg from "@/assets/project-landing.jpg";
-import impactflowImg from "@/assets/project-impactflow.jpg";
+import impactflowImg from "@/assets/hero-dashboard.jpg";
 import transportImg from "@/assets/project-transport.jpg";
 import corporateImg from "@/assets/project-corporate.jpg";
 
