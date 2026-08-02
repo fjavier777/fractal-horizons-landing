@@ -35,7 +35,7 @@ export function Nav() {
           href={getWhatsAppUrl()}
           target="_blank"
           rel="noreferrer"
-          className="rounded-full bg-sunset px-4 py-2 text-xs font-semibold text-primary-foreground shadow-[0_8px_24px_-8px_oklch(0.6_0.24_0/0.6)] transition-transform hover:-translate-y-0.5"
+          className="rounded-full bg-sunset px-4 py-2 text-xs font-semibold text-primary-foreground shadow-[0_8px_24px_-8px_oklch(0.78_0.13_82/0.6)] transition-transform hover:-translate-y-0.5"
         >
           Diagnóstico gratuito
         </a>

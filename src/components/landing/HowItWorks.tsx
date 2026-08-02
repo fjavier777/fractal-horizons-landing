@@ -91,7 +91,7 @@ export function HowItWorks() {
                   </div>
 
                   {/* Center node */}
-                  <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sunset font-display text-sm font-bold text-primary-foreground shadow-[0_0_30px_-6px_oklch(0.6_0.24_0/0.45)] md:h-16 md:w-16">
+                  <div className="relative z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sunset font-display text-sm font-bold text-primary-foreground shadow-[0_0_30px_-6px_oklch(0.78_0.13_82/0.45)] md:h-16 md:w-16">
                     <Icon className="h-5 w-5 md:h-6 md:w-6" />
                   </div>
 
