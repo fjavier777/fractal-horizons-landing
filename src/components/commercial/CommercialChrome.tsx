@@ -25,8 +25,8 @@ export function CommercialContact({ children = "Quero meu site", className = "" 
 function Brand() {
   return (
     <a href="#inicio" aria-label="Horizonte Fractal — início" className="flex min-w-0 items-center gap-2.5">
-      <img src={logoAsset.url} alt="" aria-hidden="true" width={36} height={36} decoding="async" className="h-9 w-9 shrink-0 rounded-md" />
-      <span className="font-display text-sm font-semibold text-foreground/90">Horizonte <span className="text-gradient">Fractal</span></span>
+      <img src={logoAsset.url} alt="" aria-hidden="true" width={36} height={36} decoding="async" className="h-7 w-7 shrink-0 rounded-md sm:h-9 sm:w-9" />
+      <span className="font-display text-xs font-semibold text-foreground/90 sm:text-sm">Horizonte <span className="text-gradient">Fractal</span></span>
     </a>
   );
 }
