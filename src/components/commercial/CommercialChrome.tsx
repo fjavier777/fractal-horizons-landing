@@ -42,7 +42,7 @@ export function CommercialHeader() {
             {links.map((link) => <a key={link.href} href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">{link.label}</a>)}
           </nav>
           <div className="flex shrink-0 items-center gap-2">
-            <CommercialContact className="px-3 py-2 text-xs sm:px-4"><span>Quero meu site</span></CommercialContact>
+            <CommercialContact className="px-3 py-2 text-xs sm:px-4 [&_svg]:hidden sm:[&_svg]:block"><span>Quero meu site</span></CommercialContact>
             <Button id="commercial-menu-toggle" variant="ghost" size="icon" className="lg:hidden" aria-label={open ? "Fechar menu" : "Abrir menu"} aria-expanded={open} aria-controls="commercial-mobile-menu" onClick={() => setOpen(!open)}>
               {open ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
             </Button>
