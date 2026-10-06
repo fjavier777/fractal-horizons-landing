@@ -97,7 +97,7 @@ export const Route = createFileRoute("/")({
                 description,
                 url,
                 image,
-                telephone: "+55 19 99393-1841",
+                telephone: "+55 11 91200-0583",
                 priceRange: "$$",
                 areaServed: "BR",
                 address: {
