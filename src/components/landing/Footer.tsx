@@ -137,7 +137,7 @@ export function Footer() {
                   className="group inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   <Phone className="h-4 w-4 shrink-0 text-brand-orange/80 transition-colors group-hover:text-brand-orange" />
-                  <span className="link-underline">+55 19 99393-1841</span>
+                  <span className="link-underline">+55 11 91200-0583</span>
                 </a>
               </li>
               <li>
