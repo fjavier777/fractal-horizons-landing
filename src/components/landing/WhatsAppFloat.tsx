@@ -1,13 +1,18 @@
 import { MessageCircle } from "lucide-react";
 import { WHATSAPP_URL } from "@/lib/whatsapp";
 
-export function WhatsAppFloat() {
+interface WhatsAppFloatProps {
+  href?: string;
+  label?: string;
+}
+
+export function WhatsAppFloat({ href = WHATSAPP_URL, label = "Falar no WhatsApp" }: WhatsAppFloatProps) {
   return (
     <a
-      href={WHATSAPP_URL}
+      href={href}
       target="_blank"
       rel="noreferrer"
-      aria-label="Falar no WhatsApp"
+      aria-label={label}
       className="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl ring-4 ring-[#25D366]/20 transition-transform hover:scale-110 md:bottom-8 md:right-8 md:h-16 md:w-16"
     >
       <span className="absolute inset-0 animate-ping rounded-full bg-[#25D366] opacity-30" />
