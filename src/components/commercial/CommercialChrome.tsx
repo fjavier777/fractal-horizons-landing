@@ -63,7 +63,8 @@ export function CommercialFooter() {
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-center">
           <div><Brand /><p className="mt-3 text-sm text-muted-foreground">Tecnologia, design e estratégia para negócios digitais.</p></div>
           <nav aria-label="Rodapé comercial" className="flex flex-wrap gap-x-6 gap-y-4 text-sm text-muted-foreground">
-            {links.filter((link) => link.label !== "Sobre").map((link) => <a key={link.href} href={link.href} className="link-underline hover:text-foreground">{link.label}</a>)}
+            {links.filter((link) => link.label !== "Sobre" && link.label !== "Contato").map((link) => <a key={link.href} href={link.href} className="link-underline hover:text-foreground">{link.label}</a>)}
+            <a href={COMMERCIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-foreground">Contato</a>
             <a href={COMMERCIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-foreground">WhatsApp</a>
           </nav>
         </div>
