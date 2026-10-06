@@ -5,6 +5,8 @@ import { Badge } from "@/components/ui/badge";
 import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
 import { ESSENCIAL_SITE_URL, PROFISSIONAL_SITE_URL } from "@/lib/commercial-sites";
 import { CommercialContact, CommercialHeader, CommercialFooter } from "./CommercialChrome";
+import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
+import { COMMERCIAL_WHATSAPP_URL } from "@/lib/commercial-sites";
 
 const container = "mx-auto max-w-6xl px-6";
 const section = "py-24 md:py-32";
@@ -135,5 +137,5 @@ function FinalCTA() {
 }
 
 export function CommercialLanding() {
-  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection /><ProductComparison /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA /></main><CommercialFooter /></>;
+  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection /><ProductComparison /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA /></main><CommercialFooter /><WhatsAppFloat href={COMMERCIAL_WHATSAPP_URL} label="Falar no WhatsApp" /></>;
 }
