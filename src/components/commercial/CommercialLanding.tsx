@@ -1,4 +1,4 @@
-import { ArrowRight, Check, ShieldCheck, Eye, MessageCircle, Monitor, Smartphone, Zap, Minus } from "lucide-react";
+import { ArrowRight, Check, ShieldCheck, Eye, MessageCircle, Monitor, Smartphone, Zap, Minus, Clock, FileText, ClipboardCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -25,9 +25,9 @@ function CommercialHero() {
     <section id="inicio" className="relative pb-16 pt-36 md:pb-24 md:pt-40">
       <div className={`${container} text-center`}>
         <img src={logoAsset.url} alt="Horizonte Fractal" width={80} height={80} fetchPriority="high" decoding="async" className="mx-auto mb-6 h-20 w-20 rounded-xl" />
-        <Eyebrow>PRESENÇA DIGITAL QUE TRABALHA PELO SEU NEGÓCIO</Eyebrow>
-        <h1 className="mx-auto mt-5 max-w-4xl font-display text-5xl font-bold tracking-normal sm:text-6xl md:text-7xl">Seu site precisa fazer <span className="text-gradient">mais do que existir.</span></h1>
-        <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground md:text-lg">Criamos sites profissionais, rápidos e estratégicos para empresas e profissionais que querem transformar sua presença digital em novas oportunidades.</p>
+        <Eyebrow>SITES PROFISSIONAIS PARA ADVOGADOS E ESCRITÓRIOS</Eyebrow>
+        <h1 className="mx-auto mt-5 max-w-4xl font-display text-5xl font-bold tracking-normal sm:text-6xl md:text-7xl">Sites profissionais para <span className="text-gradient">advogados e escritórios.</span></h1>
+        <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground md:text-lg">Criamos sites rápidos, elegantes e estratégicos para advogados e escritórios que querem transformar sua presença digital em novas oportunidades.</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3"><CommercialContact /><ProductAnchor /></div>
       </div>
     </section>
@@ -54,15 +54,19 @@ function ProblemSection() {
 }
 
 const products = [
-  { name: "Site Essencial", badge: "ESSENCIAL", title: "Presença profissional sem complicação.", description: "Um site elegante e objetivo para advogados que precisam estabelecer uma presença digital profissional.", price: "R$ 797", url: ESSENCIAL_SITE_URL, features: ["Design profissional", "Layout responsivo", "Apresentação de serviços", "Integração com WhatsApp", "SEO básico", "Publicação do site"] },
-  { name: "Site Profissional", badge: "PROFISSIONAL", title: "Mais espaço para apresentar seu escritório.", description: "Uma estrutura mais completa para advogados e escritórios que precisam comunicar seus serviços, diferenciais e posicionamento com mais profundidade.", price: "R$ 1.497", url: PROFISSIONAL_SITE_URL, features: ["Design profissional", "Layout responsivo", "Estrutura ampliada", "Apresentação de serviços", "Seção institucional", "Integração com WhatsApp", "SEO básico", "Publicação do site"] },
+  { name: "Site Essencial", badge: "ESSENCIAL", audience: "Para advogados autônomos", highlight: false, title: "Presença profissional sem complicação.", description: "Um site elegante e objetivo para advogados que precisam estabelecer uma presença digital profissional.", price: "R$ 797", url: ESSENCIAL_SITE_URL, features: ["Design profissional", "Layout responsivo", "Apresentação de serviços", "Integração com WhatsApp", "SEO básico", "Publicação do site"] },
+  { name: "Site Profissional", badge: "PROFISSIONAL", audience: "Para advogados e escritórios", highlight: true, title: "Mais espaço para apresentar seu escritório.", description: "Uma estrutura mais completa para advogados e escritórios que precisam comunicar seus serviços, diferenciais e posicionamento com mais profundidade.", price: "R$ 1.497", url: PROFISSIONAL_SITE_URL, features: ["Design profissional", "Layout responsivo", "Estrutura ampliada", "Apresentação de serviços", "Seção institucional", "Integração com WhatsApp", "SEO básico", "Publicação do site"] },
 ];
 
 function ProductCard({ product }: { product: typeof products[number] }) {
   return (
-    <Card className="flex h-full flex-col rounded-2xl glass p-7 md:p-10">
-      <Badge variant="outline" className="w-fit rounded-full border-brand-orange/40 px-3 py-1 text-brand-orange">{product.badge}</Badge>
-      <h3 className="mt-6 text-2xl tracking-normal md:text-3xl">{product.title}</h3>
+    <Card className={`relative flex h-full flex-col rounded-2xl p-7 md:p-10 ${product.highlight ? "border border-brand-orange/50 bg-sunset/10" : "glass"}`}>
+      <div className="flex flex-wrap items-center gap-3">
+        <Badge variant="outline" className="rounded-full border-brand-orange/40 px-3 py-1 text-brand-orange">{product.badge}</Badge>
+        {product.highlight && <Badge className="rounded-full bg-sunset px-3 py-1 text-primary-foreground">Recomendado</Badge>}
+      </div>
+      <p className="mt-6 text-xs font-medium uppercase tracking-widest text-muted-foreground">{product.audience}</p>
+      <h3 className="mt-2 text-2xl tracking-normal md:text-3xl">{product.title}</h3>
       <p className="mt-4 text-sm text-muted-foreground">{product.description}</p>
       <p className="mt-8 font-display text-5xl font-semibold text-foreground">{product.price}</p>
       <ul className="mb-8 mt-8 space-y-3">{product.features.map((feature) => <li key={feature} className="flex items-start gap-2.5 text-sm"><Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-orange" aria-hidden="true" /><span>{feature}</span></li>)}</ul>
