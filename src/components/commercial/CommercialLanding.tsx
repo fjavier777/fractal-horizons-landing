@@ -112,6 +112,22 @@ function ProductComparison() {
   );
 }
 
+function ConditionsSection() {
+  const items = [
+    { Icon: Clock, title: "Entrega em até 7 dias úteis", text: "Do início do projeto à publicação do seu site." },
+    { Icon: FileText, title: "Materiais fornecidos por você", text: "Para desenvolver o site, você envia a logo, os textos e as imagens do seu escritório." },
+    { Icon: ClipboardCheck, title: "Escopo definido por plano", text: "Cada plano inclui exatamente os itens listados na sua apresentação." },
+  ];
+  return (
+    <section id="condicoes" className={`${section} border-t border-border/60`} aria-labelledby="conditions-title">
+      <div className={container}>
+        <div className="mx-auto max-w-3xl text-center"><Eyebrow>ESCOPO E CONDIÇÕES</Eyebrow><h2 id="conditions-title" className={heading}>Tudo esclarecido antes de começar.</h2><p className="mt-5 text-muted-foreground">Sem surpresas: você sabe exatamente o que recebe em cada modelo.</p></div>
+        <div className="mt-14 grid gap-6 md:grid-cols-3">{items.map(({ Icon, title, text }) => <Card key={title} className="rounded-2xl glass p-7"><Icon className="h-6 w-6 text-brand-orange" aria-hidden="true" /><h3 className="mt-6 text-xl tracking-normal">{title}</h3><p className="mt-3 text-sm text-muted-foreground">{text}</p></Card>)}</div>
+      </div>
+    </section>
+  );
+}
+
 function ProcessSection() {
   const steps = [
     ["01", "Conversamos", "Entendemos seu negócio, suas necessidades e o modelo ideal para você."],
@@ -141,5 +157,5 @@ function FinalCTA() {
 }
 
 export function CommercialLanding() {
-  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection /><ProductComparison /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA /></main><CommercialFooter /><WhatsAppFloat href={COMMERCIAL_WHATSAPP_URL} label="Falar no WhatsApp" /></>;
+  return <><a href="#conteudo-comercial" className="skip-link">Pular para o conteúdo</a><CommercialHeader /><main id="conteudo-comercial" className="min-h-dvh"><CommercialHero /><ProblemSection /><LawyerSitesSection /><ProductComparison /><ConditionsSection /><ProcessSection /><DifferentialsSection /><AboutSection /><FinalCTA /></main><CommercialFooter /><WhatsAppFloat href={COMMERCIAL_WHATSAPP_URL} label="Falar no WhatsApp" /></>;
 }
