@@ -23,7 +23,8 @@ function CommercialHero() {
   return (
     <section id="inicio" className="relative pb-16 pt-36 md:pb-24 md:pt-40">
       <div className={`${container} text-center`}>
-        <img src="/horizonte-fractal-logo.png" alt="Horizonte Fractal" width={80} height={80} fetchPriority="high" decoding="async" className="mx-auto mb-6 h-20 w-20 rounded-xl" />
+        <img src="/horizonte-fractal-logo.png" alt="" aria-hidden="true" width={112} height={112} fetchPriority="high" decoding="async" className="mx-auto h-28 w-28 rounded-xl" />
+        <p className="mb-6 mt-3 font-display text-2xl font-bold tracking-normal text-foreground">Horizonte <span className="text-gradient">Fractal</span></p>
         <Eyebrow>SITES PROFISSIONAIS PARA ADVOGADOS E ESCRITÓRIOS</Eyebrow>
         <h1 className="mx-auto mt-5 max-w-4xl font-display text-5xl font-bold tracking-normal sm:text-6xl md:text-7xl">Sites profissionais para <span className="text-gradient">advogados e escritórios.</span></h1>
         <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground md:text-lg">Criamos sites rápidos, elegantes e estratégicos para advogados e escritórios que querem transformar sua presença digital em novas oportunidades.</p>
