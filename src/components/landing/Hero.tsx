@@ -14,7 +14,6 @@ import {
   Layers,
 } from "lucide-react";
 import heroImage from "@/assets/hero-dashboard.jpg";
-import logoFractal from "@/assets/horizonte-fractal-logo.png";
 import { getWhatsAppUrl, servicesList } from "@/lib/whatsapp";
 
 const allOptions = ["Geral", ...servicesList];
@@ -261,7 +260,7 @@ export function Hero() {
         {/* Top badge */}
         <div className="mx-auto mb-10 flex w-fit animate-fade-up items-center gap-2.5 rounded-full glass px-5 py-2 text-xs font-medium text-muted-foreground">
           <img
-            src={logoFractal}
+            src="/horizonte-fractal-logo.png"
             alt=""
             aria-hidden="true"
             width={16}

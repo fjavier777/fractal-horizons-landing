@@ -2,7 +2,6 @@ import { ArrowRight, Check, ShieldCheck, Eye, MessageCircle, Monitor, Smartphone
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import logoFractal from "@/assets/horizonte-fractal-logo.png";
 import { ESSENCIAL_SITE_URL, PROFISSIONAL_SITE_URL } from "@/lib/commercial-sites";
 import { CommercialContact, CommercialHeader, CommercialFooter } from "./CommercialChrome";
 import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
@@ -24,7 +23,7 @@ function CommercialHero() {
   return (
     <section id="inicio" className="relative pb-16 pt-36 md:pb-24 md:pt-40">
       <div className={`${container} text-center`}>
-        <img src={logoFractal} alt="Horizonte Fractal" width={80} height={80} fetchPriority="high" decoding="async" className="mx-auto mb-6 h-20 w-20 rounded-xl" />
+        <img src="/horizonte-fractal-logo.png" alt="Horizonte Fractal" width={80} height={80} fetchPriority="high" decoding="async" className="mx-auto mb-6 h-20 w-20 rounded-xl" />
         <Eyebrow>SITES PROFISSIONAIS PARA ADVOGADOS E ESCRITÓRIOS</Eyebrow>
         <h1 className="mx-auto mt-5 max-w-4xl font-display text-5xl font-bold tracking-normal sm:text-6xl md:text-7xl">Sites profissionais para <span className="text-gradient">advogados e escritórios.</span></h1>
         <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground md:text-lg">Criamos sites rápidos, elegantes e estratégicos para advogados e escritórios que querem transformar sua presença digital em novas oportunidades.</p>
