@@ -1,4 +1,3 @@
-import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const links = [
@@ -15,7 +14,7 @@ export function Nav() {
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto mt-4 flex max-w-6xl items-center justify-between rounded-2xl glass px-4 py-2.5 md:px-6">
         <a href="#top" className="flex items-center gap-2.5" aria-label="Horizonte Fractal">
-          <img src={logoAsset.url} alt="" aria-hidden="true" width={36} height={36} decoding="async" className="h-9 w-9 rounded-md" />
+          <img src="/horizonte-fractal-logo.png" alt="" aria-hidden="true" width={36} height={36} decoding="async" className="h-9 w-9 rounded-md" />
           <span className="font-display text-sm font-semibold tracking-wide text-foreground/90">
             Horizonte <span className="text-gradient">Fractal</span>
           </span>
