@@ -8,7 +8,7 @@ import {
   Phone,
   ExternalLink,
 } from "lucide-react";
-import logoAsset from "@/assets/horizonte-fractal-logo.png.asset.json";
+import logoFractal from "@/assets/horizonte-fractal-logo.png";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const quickLinks = [
@@ -51,7 +51,7 @@ export function Footer() {
           <div className="animate-fade-up">
             <a href="#top" onClick={scrollToTop} className="inline-flex items-center gap-2.5">
               <img
-                src={logoAsset.url}
+                src={logoFractal}
                 alt=""
                 aria-hidden="true"
                 width={40}
