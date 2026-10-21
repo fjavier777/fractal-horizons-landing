@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Menu, X, MessageCircle, ArrowUp } from "lucide-react";
+import { Menu, X, MessageCircle, ArrowUp, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { COMMERCIAL_WHATSAPP_URL } from "@/lib/commercial-sites";
+import { COMMERCIAL_INSTAGRAM_URL, COMMERCIAL_WHATSAPP_URL } from "@/lib/commercial-sites";
 
 const links = [
   { label: "Início", href: "#inicio" },
@@ -65,6 +65,7 @@ export function CommercialFooter() {
             {links.filter((link) => link.label !== "Sobre" && link.label !== "Contato").map((link) => <a key={link.href} href={link.href} className="link-underline hover:text-foreground">{link.label}</a>)}
             <a href={COMMERCIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-foreground">Contato</a>
             <a href={COMMERCIAL_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="link-underline hover:text-foreground">WhatsApp</a>
+            <a href={COMMERCIAL_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 link-underline hover:text-foreground"><Instagram className="h-4 w-4 shrink-0" aria-hidden="true" /><span>Instagram</span></a>
           </nav>
         </div>
         <div className="mt-10 flex items-center justify-between gap-4 border-t border-border/60 pt-6">
