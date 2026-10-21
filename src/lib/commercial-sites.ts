@@ -5,3 +5,5 @@ export const PROFISSIONAL_SITE_URL = "https://profissional-advocacia-demo.netlif
 // Commercial contact copy is isolated from the institutional WhatsApp configuration.
 export const COMMERCIAL_WHATSAPP_URL =
   `https://wa.me/5511912000583?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento para meu projeto.")}`;
+
+export const COMMERCIAL_INSTAGRAM_URL = "https://www.instagram.com/horizontefractal.web/";
